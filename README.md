@@ -1,12 +1,7 @@
 # Preguntas de Javascript
 
-#### [Crédito a la idea original](https://github.com/lydiahallie/javascript-questions)
-
 ## Índice
-1. [¿Qué devuelve la función saluda?](#1-qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
+1. [¿Qué devuelve la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/funcion-saluda.md)
 
 
-###### 1. ¿Qué devuelve la función saluda?
-```javascript
-
-```
+###### [Tomé inspiración de este trabajo](https://github.com/lydiahallie/javascript-questions)
