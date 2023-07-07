@@ -240,7 +240,7 @@ como cadenas, se comportan internamente como cadenas.
 Cuando utilizamos la [`notación de corchetes`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Property_accessors#notaci%C3%B3n_por_corchetes)
 para acceder a las propiedades de un objeto, JavaScript interpreta la 
 declaración. Comienza evaluando lo que está dentro de los corchetes, desde el 
-corchete de apertura "[" hasta el corchete de cierre "]". Solo de esta manera se
+corchete de apertura `"["` hasta el corchete de cierre `"]"`. Solo de esta manera se
 evaluará correctamente la expersión.
 
 Por ejemplo, en el caso de `raton[pajarito.tamanio]`, primero se evalúa 
