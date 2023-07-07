@@ -1,5 +1,7 @@
 # Preguntas de Javascript
 
+##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questions)
+
 ## Índice
 1. [¿Qué devuelve la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/edit/main/README.md#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
 2. [¿Qué devuelven estos bucles?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
@@ -93,5 +95,3 @@ bucle, lo que permite que cada función `setTimeout` capture el valor
 correspondiente a su propia iteración.
 </p>
 </details>
-
-##### [Tomé inspiración de este trabajo](https://github.com/lydiahallie/javascript-questions)
