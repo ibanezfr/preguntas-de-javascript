@@ -5,6 +5,8 @@
 ## Índice
 1. [¿Qué devuelven la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
 2. [¿Qué devuelve esta serie de bucles?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
+3. [¿Qué imprimirían estos console.log( ) ?](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
+
 # ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/)
 
