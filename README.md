@@ -3,7 +3,7 @@
 ##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questions)
 
 ## Índice
-1. [¿Qué devuelve la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
+1. [¿Qué devuelven la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
 2. [¿Qué devuelve esta serie de bucles?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
 # ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/)
@@ -44,7 +44,7 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 </p>
 </details>
 
-# ¿Qué devuelve esta serie de bucles?
+# ¿Qué devuelven esta serie de bucles?
 
 ```javascript
 for (var i = 5; i < 8; i++){
@@ -95,3 +95,38 @@ bucle, lo que permite que cada función `setTimeout` capture el valor
 correspondiente a su propia iteración.
 </p>
 </details>
+
+# ¿Qué imprimirían estos console.log( ) ?
+
+```javascript
+const forma = {
+  radio: 10,
+  diametro(){
+    return this.radio * 2;
+  },
+  perimetro: () => 2 * Math.PI * this.radio,
+};
+
+console.log(forma.diametro());
+console.log(forma.perimetro());
+``` 
+- A: `20` y `62.83185307179586`
+- B: `20` y `NaN`
+- C: `20` y `63`
+- D: `NaN` y `63`
+---
+<details><summary><b>Opción correcta y explicación propuesta</b></summary>
+<p>
+Sería la `B`, porque `forma.diametro()` es una función regular que accede 
+correctamente a la propiedad `radio` del objeto `forma` utilizando la palabra 
+clave `this`. Por lo tanto, al llamar a `console.log(forma.diametro())`, se 
+imprimirá el valor de 20.
+
+Por otro lado, `forma.perimetro` es una función flecha que hereda el ámbito 
+circundante, que en este caso sería el ámbito global o del archivo. La palabra
+clave `this` dentro de `perimetro` no se refiere al objeto `forma`, sino a su 
+ámbito circundante. Dado que no hay una propiedad `radio` en el ámbito 
+circundante, se devuelve `undefined`, y al realizar el cálculo, el resultado es 
+NaN (Not a Number). Por lo tanto, al llamar a `console.log(forma.perimetro())`, 
+se imprimirá NaN.
+</p></details>
