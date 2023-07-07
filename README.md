@@ -132,3 +132,28 @@ circundante, se devuelve `undefined`, y al realizar el cálculo, el resultado es
 NaN (Not a Number). Por lo tanto, al llamar a `console.log(forma.perimetro())`, 
 se imprimirá NaN.
 </p></details>
+
+# ¿Qué devolvería el siguiente código?
+
+```javascript
+  +true;
+  !"Franco";
+```
+- A: `1` y `false`
+- B: `false` y `NaN`
+- C: `false` y `false`
+
+---
+<details><summary><b><p>
+La correcta sería la A.
+
+En el primer caso `+true` se trata de convertir el valor booleano `true` en un 
+número. Cuando se convierte un valor booleano a número, `true` se convierte en 1
+y `false` se convierte en 0. Por lo tanto, `+true` devuelve el número 1.
+
+En el segundo caso, `!"Franco"` es una expresión de negación lógica(`!`) que se 
+aplica a la cadena de texto "Franco". En JavaScript, cualquier cadena de texto 
+vacía se considera verdadera en un contexto booleano. Al negarla, estamos 
+preguntando si este valor verdader es falso. Por lo tanto, `!"Franco"` devuelve
+el valor booleano false.
+</p></details>
