@@ -3,12 +3,12 @@
 ##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questions)
 
 ## Índice
-1. [¿Qué devuelven la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
-2. [¿Qué devuelve esta serie de bucles?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
-3. [¿Qué imprimirían estos console.log( ) ?](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
-
+1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de "hoisting" y "zona muerta temporal".](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
+2. [Alcance de variables y setTimeout en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
+3. [Funciones regulares y flecha con el uso de this en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
+4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 # ¿Qué devuelve la función saluda? 
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/)
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
 function saluda(){
@@ -47,6 +47,7 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 </details>
 
 # ¿Qué devuelven esta serie de bucles?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
 for (var i = 5; i < 8; i++){
@@ -99,6 +100,7 @@ correspondiente a su propia iteración.
 </details>
 
 # ¿Qué imprimirían estos console.log( ) ?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
 const forma = {
@@ -134,6 +136,7 @@ se imprimirá NaN.
 </p></details>
 
 # ¿Qué devolvería el siguiente código?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
   +true;
