@@ -42,6 +42,56 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 </p>
 </details>
 
+# ¿Qué devuelve esta serie de bucles?
 
+```javascript
+for (var i = 0; i < 3; i++){
+  setTimeout(() => console.log(i), 1);
+}
+
+for(let i = 0; i < 3; i++){
+  setTimeout(() => console.log(i), 1);
+}
+```
+- A: `0 1 2` y `0 1 2`
+- B: `0 1 2` y `3 3 3`
+- C: `3 3 3` y  `0 1 2`
+
+---
+<details><summary><b>Opción correcta y explicación propuesta</b></summary>
+<p>
+
+La correcta sería la C.
+
+En JavaScript, las funciones [`setTimeout`](https://developer.mozilla.org/es/docs/Web/API/setTimeout)
+se ejecutan de forma asíncrona. Esto significa que se colocan en la cola de 
+eventos y se ejecutan después de que se hayan completado todas las tareas 
+sincrónicas.
+
+En el primer bucle, se utiliza la palabra reservada `var` para declarar la 
+variable `i`. Al usar `var`, el alcance de la variable se vuelve global. Esto 
+significa que todas las iteraciones del bucle comparten la misma variable `i`. 
+Durante cada iteración, el valor de `i` se incrementa en 1. Sin embargo, debido 
+a que las funciones `setTimeout` se ejecutan de forma asíncrona 
+después de que el bucle haya terminado, todas las funciones `setTimeout` ven el 
+mismo valor de `i`, que es 3 al final del bucle. Por lo tanto, cuando se 
+ejecutan las funciones `setTimeout`, todas imprimen el valor 3.
+
+En el segundo bucle, se utiliza la palabra reservada `let` para declarar la 
+variable `i`. Al usar `let`, se crea una nueva variable `i` en cada iteración 
+del bucle. Cada variable `i` tiene su propio alcance de bloque y se conserva 
+dentro del bloque del bucle. Cuando se llama a la función `setTimeout` en cada 
+iteración, se captura el valor actual de `i` dentro de ese alcance de bloque 
+específico. Como resultado, cada función `setTimeout` ve un valor de `i` 
+distinto correspondiente a su respectiva iteración del bucle.
+
+En resumen, la diferencia en el comportamiento se debe al alcance de las 
+variables `i`. Con `var`, se comparte una sola variable `i` en todo el bucle,
+lo que provoca que todas las funciones `setTimeout` vean el mismo valor al 
+final del bucle. Con `let`, se crea una nueva variable `i` en cada iteración del 
+bucle, lo que permite que cada función `setTimeout` capture el valor 
+correspondiente a su propia iteración.
+</p>
+</details>
 
 ##### [Tomé inspiración de este trabajo](https://github.com/lydiahallie/javascript-questions)
