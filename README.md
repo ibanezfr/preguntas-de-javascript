@@ -7,7 +7,9 @@
 2. [Alcance de variables y setTimeout en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
 3. [Funciones regulares y flecha con el uso del this en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
-# ¿Qué devuelve la función saluda? 
+
+
+# 1 ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -43,18 +45,19 @@ variable `let` o `const` antes de su declaración, se lanzará un `ReferenceErro
 . En el ejemplo, la variable `edad` de declara con `let`, y como intentamos 
 acceder a ella antes de su declaración, se produce un `ReferenceError`.
 
-<a href="#"
-   title="Captura del output en la terminal del ejercicio">
-  <img src="./assets/images/1.webp"
-       alt="Captura del output en la terminal del ejercicio"
-       width="555" height="300"
-       style="border: 1px solid black; text-align: center;">
-</a>
+
+<img src="./assets/images/1.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="555" height="300"
+     style="border: 1px solid black; text-align: center;">
+
 
 </p>
 </details>
 
-# ¿Qué devuelve esta serie de bucles?
+---
+
+# 2 ¿Qué devuelve esta serie de bucles?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -104,10 +107,32 @@ lo que provoca que todas las funciones `setTimeout` vean el mismo valor al
 final del bucle. Con `let`, se crea una nueva variable `i` en cada iteración del 
 bucle, lo que permite que cada función `setTimeout` capture el valor 
 correspondiente a su propia iteración.
+
+<img src="./assets/images/2a.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="150"
+     style="border: 1px solid black; text-align: center;">
+
+<img src="./assets/images/2b.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="490" height="90"
+     style="border: 1px solid black; text-align: center;">
+
+<img src="./assets/images/2c.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="100"
+     style="border: 1px solid black; text-align: center;">
+
+<img src="./assets/images/2d.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="490" height="90"
+     style="border: 1px solid black; text-align: center;">
 </p>
 </details>
 
-# ¿Qué imprimirían estos console.log( ) ?
+---
+
+# 3 ¿Qué imprimirían estos console.log( ) ?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -142,9 +167,17 @@ clave `this` dentro de `perimetro` no se refiere al objeto `forma`, sino a su
 circundante, se devuelve `undefined`, y al realizar el cálculo, el resultado es 
 NaN (Not a Number). Por lo tanto, al llamar a `console.log(forma.perimetro())`, 
 se imprimirá NaN.
+
+<img src="./assets/images/3.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="300"
+     style="border: 1px solid black; text-align: center;">
+
 </p></details>
 
-# ¿Qué devolvería el siguiente código?
+--- 
+
+# 4 ¿Qué devolvería el siguiente código?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -169,4 +202,10 @@ aplica a la cadena de texto "Franco". En JavaScript, cualquier cadena de texto
 vacía se considera verdadera en un contexto booleano. Al negarla, estamos 
 preguntando si este valor verdader es falso. Por lo tanto, `!"Franco"` devuelve
 el valor booleano false.
+
+<img src="./assets/images/4.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="200"
+     style="border: 1px solid black; text-align: center;">
+
 </p></details>
