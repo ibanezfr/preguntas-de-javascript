@@ -121,6 +121,7 @@ console.log(forma.perimetro());
 ---
 <details><summary><b>Opción correcta y explicación propuesta</b></summary>
 <p>
+
 Sería la `B`, porque `forma.diametro()` es una función regular que accede 
 correctamente a la propiedad `radio` del objeto `forma` utilizando la palabra 
 clave `this`. Por lo tanto, al llamar a `console.log(forma.diametro())`, se 
@@ -147,7 +148,8 @@ se imprimirá NaN.
 - C: `false` y `false`
 
 ---
-<details><summary><b><p>
+<details><summary><b>Opción correcta y explicación propuesta</b></summary><p>
+
 La correcta sería la A.
 
 En el primer caso `+true` se trata de convertir el valor booleano `true` en un 
