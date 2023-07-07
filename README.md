@@ -45,17 +45,17 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 # ¿Qué devuelve esta serie de bucles?
 
 ```javascript
-for (var i = 0; i < 3; i++){
+for (var i = 5; i < 8; i++){
   setTimeout(() => console.log(i), 1);
 }
 
-for(let i = 0; i < 3; i++){
+for(let i = 5; i < 8; i++){
   setTimeout(() => console.log(i), 1);
 }
 ```
-- A: `0 1 2` y `0 1 2`
-- B: `0 1 2` y `3 3 3`
-- C: `3 3 3` y  `0 1 2`
+- A: `5 6 7`  y  `5 6 7`
+- B: `5 6 7`  y  `7 7 7`
+- C: `7 7 7`  y  `5 6 7`
 
 ---
 <details><summary><b>Opción correcta y explicación propuesta</b></summary>
