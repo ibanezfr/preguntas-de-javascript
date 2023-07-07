@@ -43,6 +43,14 @@ variable `let` o `const` antes de su declaración, se lanzará un `ReferenceErro
 . En el ejemplo, la variable `edad` de declara con `let`, y como intentamos 
 acceder a ella antes de su declaración, se produce un `ReferenceError`.
 
+<a href="#"
+   title="Captura del output en la terminal del ejercicio">
+  <img src="./assets/images/1.webp"
+       alt="Captura del output en la terminal del ejercicio"
+       width="555" height="300"
+       style="border: 1px solid black; text-align: center;">
+</a>
+
 </p>
 </details>
 
