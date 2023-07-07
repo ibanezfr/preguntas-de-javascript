@@ -210,3 +210,56 @@ el valor booleano false.
 </p></details>
 
 ---
+
+# 5. ¿Cuál de éstas opciones es incorrecta?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+  const pajarito = {
+    tamanio : "pequenio"
+  };
+
+  const raton = {
+    nombre : "Perez",
+    pequenio : true
+  };
+```
+- A: `raton.pajarito.tamanio`
+- B: `raton[pajarito.tamanio]`
+- C: `raton[pajarito["tamanio"]]`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La incorrecta sería la A.
+
+En JavaScript, todas las claves de un objeto se interpretan como [`cadenas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
+, a menos que sean de tipo "símbolo". Aunque no las escribamos explícitamente 
+como cadenas, se comportan internamente como cadenas.
+
+Cuando utilizamos la [`notación de corchetes`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Property_accessors#notaci%C3%B3n_por_corchetes)
+para acceder a las propiedades de un objeto, JavaScript interpreta la 
+declaración. Comienza evaluando lo que está dentro de los corchetes, desde el 
+corchete de apertura "[" hasta el corchete de cierre "]". Solo de esta manera se
+evaluará correctamente la expersión.
+
+Por ejemplo, en el caso de `raton[pajarito.tamanio]`, primero se evalúa 
+`pajarito.tamanio`, que tiene un valor de "pequenio". Luego, JavaScript 
+interpreta `raton["pequenio"]`, lo cual devuelve `true`.
+
+Sin embargo, con la [`notación de puntos`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Property_accessors#notaci%C3%B3n_por_punto),
+esto no ocurre de la misma manera. Si intentamos acceder a una propiedad 
+utilizando la notación de puntos, como `raton.pajarito.tamanio`, JavaScript 
+busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como 
+`raton.pajarito` es `undefined`, en realidad estamos intentando acceder a 
+`undefined.tamanio`. Esto no es válido y generará un error similar a 
+"Cannot read property `'tamanio'` of undefined".
+
+
+<img src="./assets/images/5.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
