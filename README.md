@@ -4,7 +4,7 @@
 
 ## Índice
 1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de "hoisting" y "zona muerta temporal".](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
-2. [Alcance de variables y setTimeout en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelven-esta-serie-de-bucles)
+2. [Alcance de variables y setTimeout en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
 3. [Funciones regulares y flecha con el uso de this en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 # ¿Qué devuelve la función saluda? 
@@ -46,7 +46,7 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 </p>
 </details>
 
-# ¿Qué devuelven esta serie de bucles?
+# ¿Qué devuelve esta serie de bucles?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
