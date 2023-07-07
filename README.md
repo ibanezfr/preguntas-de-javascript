@@ -8,7 +8,7 @@
 3. [Funciones regulares y flecha con el uso del this en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#3-qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#4-qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 
-
+---
 # 1. ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
@@ -25,7 +25,7 @@ let edad = 27
 - C: `Franco` y `undefined`
 - D: `Franco` y `ReferenceError`
   
----
+
 <details><summary><b>Opción correcta y explicación propuesta</b></summary>
 <p>
    
@@ -73,7 +73,7 @@ for(let i = 5; i < 8; i++){
 - B: `5 6 7`  y  `7 7 7`
 - C: `7 7 7`  y  `5 6 7`
 
----
+
 <details><summary><b>Opción correcta y explicación propuesta</b></summary>
 <p>
 
@@ -151,7 +151,7 @@ console.log(forma.perimetro());
 - B: `20` y `NaN`
 - C: `20` y `63`
 - D: `NaN` y `63`
----
+
 <details><summary><b>Opción correcta y explicación propuesta</b></summary>
 <p>
 
@@ -188,7 +188,6 @@ se imprimirá NaN.
 - B: `false` y `NaN`
 - C: `false` y `false`
 
----
 <details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
 
 La correcta sería la A.
@@ -209,3 +208,5 @@ el valor booleano false.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+
+---
