@@ -1,7 +1,7 @@
 # Preguntas de Javascript
 
 ## Índice
-1. [¿Qué devuelve la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/edit/main/README.md#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
+1. [¿Qué devuelve la función saluda?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
 2. [¿Qué devuelve esta serie de bucles?](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#qu%C3%A9-devuelve-esta-serie-de-bucles)
 # ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/)
