@@ -9,7 +9,7 @@
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 
 
-# 1 ¿Qué devuelve la función saluda? 
+# 1. ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -57,7 +57,7 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 
 ---
 
-# 2 ¿Qué devuelve esta serie de bucles?
+# 2. ¿Qué devuelve esta serie de bucles?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -132,7 +132,7 @@ correspondiente a su propia iteración.
 
 ---
 
-# 3 ¿Qué imprimirían estos console.log( ) ?
+# 3. ¿Qué imprimirían estos console.log( ) ?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -170,14 +170,14 @@ se imprimirá NaN.
 
 <img src="./assets/images/3.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="500" height="300"
+     width="500" height="250"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
 
 --- 
 
-# 4 ¿Qué devolvería el siguiente código?
+# 4. ¿Qué devolvería el siguiente código?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
