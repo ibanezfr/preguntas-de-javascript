@@ -8,6 +8,7 @@
 3. [Funciones regulares y flecha con el uso del this en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#3-qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#4-qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 5. [Acceso a propiedades de objetos en JavaScript: Notación de corchetes y notación de puntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#5-cu%C3%A1l-de-%C3%A9stas-opciones-es-incorrecta)
+6. [Manejo de objetos por referencia en JavaScript]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -257,6 +258,48 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 
 
 <img src="./assets/images/5.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 6. ¿Qué devuelve este código?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+  let a = { saludo: "¿Qué tal?" };
+  let b;
+
+  b = a;
+  c.saludo = "¡Hola!";
+  console.log(d.saludo);
+```
+- A: `¡Hola!`
+- B: `undefined`
+- C: `ReferenceError`
+- D: `TypeError`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+En `JavaScript`, los objetos se manejan por referencia. Cuando se asignan a 
+variables o se pasan como argumentos a funciones, todos apuntan a la misma 
+ubicación en memoria. Por lo tanto, cuando se cambia un objeto, ésto se verá 
+reflejado en todas las otras referencias que apunten a ese objeto.
+
+Primero se crea un objeto `a` con un valor determinado. Se asigna la referencia
+`a` a la variable `b`, es por eso que ambas variables apuntan al mismo objeto en 
+la memoria.
+
+Cuando se modifica el objeto a través de la variable `c`, el cambio se refleja 
+también en la variable `d` porque ambas apuntan al mismo objeto.
+
+En `JavaScript`, cuando se cambia un objeto, todos los objetos que compartan la 
+misma referencia se verán afectados por ese cambio.
+
+<img src="./assets/images/6.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="500" height="200"
      style="border: 1px solid black; text-align: center;">
