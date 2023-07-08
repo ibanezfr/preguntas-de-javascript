@@ -283,6 +283,7 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 - D: `TypeError`
 
 <details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+La correcta sería la A.
 
 En `JavaScript`, los objetos se manejan por referencia. Cuando se asignan a 
 variables o se pasan como argumentos a funciones, todos apuntan a la misma 
