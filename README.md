@@ -354,7 +354,7 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 
 ---
 
-# 7. ¿Qué devolvería este código?
+# 8. ¿Qué devolvería este código?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
