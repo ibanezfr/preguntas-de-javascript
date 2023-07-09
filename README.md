@@ -10,6 +10,7 @@
 5. [Acceso a propiedades de objetos en JavaScript: Notación de corchetes y notación de puntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#5-cu%C3%A1l-de-%C3%A9stas-opciones-es-incorrecta)
 6. [Manejo de objetos por referencia en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#6-qu%C3%A9-devuelve-este-c%C3%B3digo)
 7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#7-qu%C3%A9-imprimir%C3%ADan-estos-consolelog-)
+8. [TypeError: Acceso incorrecto al método estático en una instancia específica]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -345,6 +346,47 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 
 
 <img src="./assets/images/7.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 7. ¿Qué devolvería este código?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+  class camaleon  {
+    static cambiarColor (colorNuevo){
+      this.color = colorNuevo;
+      return this.color;
+    }
+
+    constructor({color = "verde"} = {}){
+      this.color = color;
+    }
+  }
+  const manchita = new camaleon({color : "azul"});
+  manchita.cambiarColor("naranja");
+
+```
+- A. `verde`
+- B. `naranja`
+- C. `azul`
+- D. `TypeError`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la D. `TypeError`.
+
+El método cambiarColor es estático y no se puede acceder a través de una 
+instancia como `manchita.cambiarColor("naranja")`. Debería ser llamado 
+directamente en la clase camaleon, como `camaleon.cambiarColor("naranja")`. 
+Esto causa un TypeError.
+
+<img src="./assets/images/8.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
