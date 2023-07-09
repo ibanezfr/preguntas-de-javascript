@@ -9,7 +9,7 @@
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#4-qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 5. [Acceso a propiedades de objetos en JavaScript: Notación de corchetes y notación de puntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#5-cu%C3%A1l-de-%C3%A9stas-opciones-es-incorrecta)
 6. [Manejo de objetos por referencia en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#6-qu%C3%A9-devuelve-este-c%C3%B3digo)
-7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo]()
+7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#7-qu%C3%A9-imprimir%C3%ADan-estos-consolelog-)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -346,7 +346,9 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 
 <img src="./assets/images/7.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="500" height="200"
+     width="350" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+
+---
