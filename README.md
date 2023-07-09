@@ -9,6 +9,7 @@
 4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#4-qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
 5. [Acceso a propiedades de objetos en JavaScript: Notación de corchetes y notación de puntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#5-cu%C3%A1l-de-%C3%A9stas-opciones-es-incorrecta)
 6. [Manejo de objetos por referencia en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#6-qu%C3%A9-devuelve-este-c%C3%B3digo)
+7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -308,3 +309,44 @@ misma referencia se verán afectados por ese cambio.
 </p></details>
 
 ---
+# 7. ¿Qué imprimirían estos console.log( )?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+  let a = 3;
+  let b = new Number(3);
+  let c = 3;
+
+  console.log(a == b);
+  console.log(a === b);
+  console.log(b === c);
+
+```
+- A. `true` `false` `true`
+- B. `false` `false` `true`
+- C. `true` `false` `false`
+- D. `false` `true` `true`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la C.
+
+"`new Number( )`" es un constructor de funciones integrado en JavaScript. 
+Aunque parece representar un número, en realidad es un objeto con 
+características adicionales.
+
+Cuando utilizamos el operador `"=="`, se verifica si dos valores son iguales, 
+sin tener en cuenta el tipo de  dato. En este caso, ambos tienen el valor de 3, 
+por lo que se devuelve `"true"`.
+
+sin embargo, cuando utilizamos el operador `"==="`, se verifica tanto el valor 
+como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objeto
+, los dos valores no son iguales y se devuelve `"false"`.
+
+
+<img src="./assets/images/7.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="500" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
