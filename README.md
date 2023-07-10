@@ -11,6 +11,7 @@
 6. [Manejo de objetos por referencia en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#6-qu%C3%A9-devuelve-este-c%C3%B3digo)
 7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#7-qu%C3%A9-imprimir%C3%ADan-estos-consolelog-)
 8. [TypeError: Acceso incorrecto al método estático en una instancia específica](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#8-qu%C3%A9-devolver%C3%ADa-este-c%C3%B3digo)
+9. [Depuración de errores y el uso estricto en JavaScript]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -387,6 +388,48 @@ directamente en la clase camaleon, como `camaleon.cambiarColor("naranja")`.
 Esto causa un TypeError.
 
 <img src="./assets/images/8.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 9. ¿Qué imprimiría este console.log( )?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+ let saludo;
+ asludo = {}; // Error de tipeo
+ console.log(asludo);
+
+```
+- A. `{}`
+- B. `ReferenceError: asludo is not defined`
+- C. `undefined`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la A.
+
+En este caso, JavaScript registra el objeto porque acabamos de crear un objeto 
+vacío en el objeto global. Cuando escribimos erróneamente `saludo` como `asludo`
+, el intérprete de JavaScript lo interpreta como `global.asludo = {}`
+(o window.asludo = {} en un navegador).
+
+Para evitar este tipo de errores, podemos utilizar el `"modo estricto"` 
+(["use strict"](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Modo_estricto)).
+Esto garantiza que una variable se declare antes de asignarle 
+cualquier valor.
+
+
+
+<img src="./assets/images/9a.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+  <img src="./assets/images/9b.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
