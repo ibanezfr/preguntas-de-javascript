@@ -12,6 +12,7 @@
 7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#7-qu%C3%A9-imprimir%C3%ADan-estos-consolelog-)
 8. [TypeError: Acceso incorrecto al método estático en una instancia específica](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#8-qu%C3%A9-devolver%C3%ADa-este-c%C3%B3digo)
 9. [Depuración de errores y el uso estricto en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#9-qu%C3%A9-imprimir%C3%ADa-este-consolelog-)
+10. []()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -434,6 +435,43 @@ cualquier valor.
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 10. ¿Qué sucede en este caso?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+ function ladrar( ){
+  console.log("Guau!");
+ }
+ 
+ ladrar.animal = "perro";
+
+```
+- A. No pasa nada, es válido
+- B. `SyntaxError`. No es posible agregar propiedades a una función así.
+- C. `undefined`
+- D. `ReferenceError`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta es la A.
+
+En JavaScript las funciones son `objetos`.(Excepto los tipos primitivos, `todo` 
+es un objeto en JavaScript).
+
+Una función se considera un objeto. El código que escribas no es en realidad la 
+función en sí, sino que la función es un objeto que posee propiedades. Una de 
+esas propiedades es la capacidad de ser invocada.
+
+<img src="./assets/images/10.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+  r
 
 </p></details>
 
