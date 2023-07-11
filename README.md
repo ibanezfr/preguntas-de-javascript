@@ -476,3 +476,60 @@ esas propiedades es la capacidad de ser invocada.
 </p></details>
 
 ---
+
+# 11. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function Persona(nombre, apellido){
+  this.nombre = nombre;
+  this.apellido = apellido;
+}
+
+const asociado = new Persona("Franco", "Ibañez");
+
+Persona.obtenerNombreCompleto = function(){
+  return `${this.nombre} ${this.apellido}`;
+}
+
+console.log(asociado.obtenerNombreCompleto());
+
+```
+- A. `TypeError`
+- B. `SyntaxError`
+- C. `Franco Ibañez`
+- D. `undefined` `undefined`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la A.
+
+En JavaScript, no es posible añadir propiedades a un constructor como se hace 
+con los objetos. Para agregar una característica a todos los objetos al mismo 
+tiempo, se debe utilizar el prototipo en su lugar. 
+Se debería haber hecho algo así:
+```javascript
+Persona.prototype.obtenerNombreCompleto = function(){
+  return `${this.nombre} ${this.apellido}`
+}
+```
+de esta forma, "asociado.obtenerNombreCompleto" hubiese funcionado 
+correctamente.
+
+La ventaja de utilizar el prototipo radica en la optimización del uso de memoria
+. Si se agregara este método directamente al constructor, todas las instancias
+de "Persona" tendrían esta propiedad, lo que consumiría más memoria. Sin embargo
+, al añadirlo al prototipo, solo se guarda una copia en la memoria y todas las 
+instancias pueden acceder a él. Esto evita el desperdicio innecesario de espacio 
+de espacio en memoria.
+
+<img src="./assets/images/11a.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+<img src="./assets/images/11b.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
