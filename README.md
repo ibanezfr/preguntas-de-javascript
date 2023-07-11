@@ -277,8 +277,8 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
   let b;
 
   b = a;
-  c.saludo = "¡Hola!";
-  console.log(d.saludo);
+  a.saludo = "¡Hola!";
+  console.log(b.saludo);
 ```
 - A: `¡Hola!`
 - B: `undefined`
@@ -297,8 +297,8 @@ Primero se crea un objeto `a` con un valor determinado. Se asigna la referencia
 `a` a la variable `b`, es por eso que ambas variables apuntan al mismo objeto en 
 la memoria.
 
-Cuando se modifica el objeto a través de la variable `c`, el cambio se refleja 
-también en la variable `d` porque ambas apuntan al mismo objeto.
+Cuando se modifica el objeto a través de la variable `a`, el cambio se refleja 
+también en la variable `b` porque ambas apuntan al mismo objeto.
 
 En `JavaScript`, cuando se cambia un objeto, todos los objetos que compartan la 
 misma referencia se verán afectados por ese cambio.
@@ -311,6 +311,7 @@ misma referencia se verán afectados por ese cambio.
 </p></details>
 
 ---
+
 # 7. ¿Qué imprimirían estos console.log( )?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
