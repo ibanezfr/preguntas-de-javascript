@@ -12,7 +12,7 @@
 7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#7-qu%C3%A9-imprimir%C3%ADan-estos-consolelog-)
 8. [TypeError: Acceso incorrecto al método estático en una instancia específica](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#8-qu%C3%A9-devolver%C3%ADa-este-c%C3%B3digo)
 9. [Depuración de errores y el uso estricto en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#9-qu%C3%A9-imprimir%C3%ADa-este-consolelog-)
-10. []()
+10. [Las funciones en JavaScript: objetos invocables](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#10-qu%C3%A9-sucede-en-este-caso)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -471,7 +471,7 @@ esas propiedades es la capacidad de ser invocada.
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
-  r
+
 
 </p></details>
 
