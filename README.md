@@ -14,6 +14,8 @@
 9. [Depuración de errores y el uso estricto en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#9-qu%C3%A9-imprimir%C3%ADa-este-consolelog-)
 10. [Las funciones en JavaScript: objetos invocables](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#10-qu%C3%A9-sucede-en-este-caso)
 11. [Optimización de memoria en JavaScript mediante el uso de prototipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#11-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+12. []()
+
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -529,6 +531,51 @@ de espacio en memoria.
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
 <img src="./assets/images/11b.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 12. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function Persona(nombre, apellido){
+  this.nombre = nombre;
+  this.apellido = apellido;
+}
+
+const franco = new Persona("Franco", "Ibañez");
+const juan = Persona("Juan", "Sabato");
+
+console.log(franco);
+console.log(sarah);
+
+```
+- A: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `undefined`
+- B: `Persona {nombre: "Franco", apellido: "Ibañez"}` 
+      y `Persona {nombre: "Juan", apellido: "Sabato"}`
+- C: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `{}`
+- D: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `ReferenceError`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la A.
+
+Cuando se crean las 2 instancias de la clase Persona, la instancia `franco` se 
+crea utilizando la palabra reservada `new`, lo que significa que se crea un 
+nuevo objeto vacío y se asigna a `this` dentro la función `Persona`.
+
+Al crear la instancia `juan`, no se utiliza la palabra reservada `this`. Dentro
+de la función Persona, el `this` se refiere al objeto global en lugar de crear 
+un nuevo objeto. Las propiedades `nombre` y `apellido` se asignan al objeto 
+global en lugar de a un nuevo objeto.
+
+
+<img src="./assets/images/12.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
