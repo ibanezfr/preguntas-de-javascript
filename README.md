@@ -1,6 +1,7 @@
 # Preguntas de Javascript
 
-##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questions)
+##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questi
+ons)
 
 ## Índice
 1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de "hoisting" y "zona muerta temporal".](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#1-qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
@@ -575,6 +576,52 @@ global en lugar de a un nuevo objeto.
 
 
 <img src="./assets/images/12.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+# 12. ¿Cuáles son las 3 fases de la propagación de eventos?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+
+- A: `Target` > `Capturing` > `Bubbling`
+- B: `Bubbling` > `Target` > `Capturing`
+- C: `Target` > `Bubbling` > `Capturing`
+- D: `Capturing` > `Target` > `Bubbling`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta seŕia la D.
+
+Estas fases son importantes en la programación de eventos en el ámbito de la 
+interfaz de usuario y se refieren al orden en que los eventos se propagan a 
+través de los elementos del DOM (Modelo de Objetos del Documento).
+
+La respuesta correcta es D: Capturing > Target > Bubbling. Esto significa que el
+evento primero pasa por la fase de Capturing, luego alcanza el elemento objetivo
+(Target) y finalmente se propaga en la fase de Bubbling.
+
+Durante la fase de Capturing, el evento se propaga desde el elemento raíz del 
+DOM hacia el elemento objetivo. A medida que se propaga, atraviesa los elementos
+ancestros en el camino hacia el elemento objetivo.
+
+Una vez que el evento alcanza el elemento objetivo, comienza la fase de 
+Bubbling. En esta fase, el evento se propaga desde el elemento objetivo hacia el
+elemento raíz del DOM. Al igual que en la fase de Capturing, atraviesa los 
+elementos ancestros en su camino hacia el elemento raíz.
+
+Es importante comprender estas fases de propagación de eventos para manejar 
+adecuadamente los eventos en la programación de la interfaz de usuario. 
+Dependiendo del caso de uso, se puede aprovechar la fase de Capturing o la fase 
+de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
+
+
+
+<img src="https://camo.githubusercontent.com/5fd2d347d044150e4ae35091622f0628f0e
+b7893966f03c8955ca271f3153e47/68747470733a2f2f692e696d6775722e636f6d2f4e31386f52
+67642e706e67"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
