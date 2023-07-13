@@ -721,3 +721,39 @@ cuidado al realizar operaciones para evitar resultados inesperados.
 </p></details>
 
 ---
+# 16. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+let numero = 0;
+console.log(numero++);
+console.log(++numero);
+console.log(numero);
+
+```
+- A. `1``1``1`
+- B. `1``2``2`
+- C. `0``2``2`
+- D. `0``1``2`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la C.
+
+Aquí debemos tener en cuenta el comportamiento del operador unario ++ :
+Si lo aplicamos `postfix`...(algo++)
+1. Devuelve el valor actual.
+2. Incrementa el valor en 1.
+
+Si lo aplicamos `prefix`...(++algo)
+1. Incrementa el valor en 1
+2. Devuelve el valor actual
+
+<img src="./assets/images/16.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
