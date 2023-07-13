@@ -1,7 +1,6 @@
 # Preguntas de Javascript
 
-##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questi
-ons)
+##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questions)
 
 ## Índice
 1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de "hoisting" y "zona muerta temporal".](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#1-qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
@@ -582,7 +581,7 @@ global en lugar de a un nuevo objeto.
 
 </p></details>
 
-# 12. ¿Cuáles son las 3 fases de la propagación de eventos?
+# 13. ¿Cuáles son las 3 fases de la propagación de eventos?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 
@@ -619,11 +618,11 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 
 
 
-<img src="https://camo.githubusercontent.com/5fd2d347d044150e4ae35091622f0628f0e
-b7893966f03c8955ca271f3153e47/68747470733a2f2f692e696d6775722e636f6d2f4e31386f52
-67642e706e67"
+<img src="https://camo.githubusercontent.com/5fd2d347d044150e4ae35091622f0628f0eb7893966f03c8955ca271f3153e47/68747470733a2f2f692e696d6775722e636f6d2f4e31386f5267642e706e67"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+ 
+---
