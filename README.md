@@ -667,3 +667,53 @@ métodos y propiedades incorporados del lenguaje, ya que están disponibles en l
 prototipos de los objetos. 
 
 ---
+
+# 15. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function sumar(a,b){
+  return a + b;
+}
+
+sumar(2, "5");
+
+```
+- A. `NaN`
+- B. `"25"`
+- C. `TypeError`
+- D. `7`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la B.
+
+En JavaScript, no es necesario declarar explícitamente el tipo de una variable, 
+ya que se determina automáticamente durante la ejecución del programa. Esto se 
+debe a que JavaScript es un lenguaje de tipado dinámico o de tipado débil.
+
+La [coerción implícita de tipos](https://developer.mozilla.org/es/docs/Glossary/Type_coercion)
+es un concepto en JavaScript donde los valores pueden convertirse 
+automáticamente en otro tipo sin necesidad de ser declarado. 
+Esto permite que los valores se ajusten y se utilicen de manera flexible en 
+diferentes operaciones.
+
+Un ejemplo de coerción implícita ocurre cuando se realiza una suma entre un 
+número y una cadena. En este caso, JavaScript convierte el número en una cadena 
+para que la operación tenga sentido y pueda devolver un resultado. Por ejemplo, 
+al sumar el número 2 con la cadena "5", JavaScript trata al número como una 
+cadena y realiza una concatenación de cadenas, resultando en el valor "25".
+
+La coerción en JavaScript implica la conversión de un tipo de dato a otro de 
+forma automática según el contexto de la operación o expresión. Esto 
+proporciona flexibilidad en la manipulación de valores, pero también requiere 
+cuidado al realizar operaciones para evitar resultados inesperados.
+
+<img src="./assets/images/15.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
