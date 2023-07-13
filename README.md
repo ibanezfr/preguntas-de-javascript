@@ -16,7 +16,7 @@
 11. [Optimización de memoria en JavaScript mediante el uso de prototipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#11-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 12. [Creación de instancias: Uso de 'new' vs. in 'new': Impacto en la asignación de propiedades](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#12-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 13. [Fases de propagación de eventos en la programación de la interfaz de usuario](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#13-cu%C3%A1les-son-las-3-fases-de-la-propagaci%C3%B3n-de-eventos)
-
+14. [Herencia de prototipos y acceso a métodos en JavaScript]()
 ---
 # 1. ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
@@ -626,4 +626,44 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 
 </p></details>
  
+---
+
+# 14. Todos los objetos tienen un prototipo.
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+
+- A: `Verdadero`
+- B: `Falso`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta seŕia la B.
+
+En JavaScript, todos los objetos tienen un prototipo, excepto el [objeto base](https://stackoverflow.com/questions/56659303/what-is-base-object-in-javascript).
+El objeto base es el punto final de la cadena de prototipos y no tiene ningún 
+prototipo al que acceder. Esta es la razón por la que el objeto base no tiene 
+métodos o propiedades específicas disponibles para su uso.
+
+Sin embargo, cuando creamos objetos a partir de constructores o clases, esos 
+objetos heredan el prototipo de su constructor o clase. El prototipo actúa como 
+un "modelo" para los objetos y contiene métodos y propiedades compartidos que 
+pueden ser utilizados por los objetos creados a partir de él.
+
+Por ejemplo, el componente en cuestión tiene acceso a algunos métodos y 
+propiedades, como el método `.toString()`. Esto se debe a que el objeto del 
+componente hereda el prototipo que contiene ese método.
+
+Cuando se accede a un método o propiedad en un objeto, JavaScript busca primero 
+en el objeto en sí. Si no se encuentra allí, continúa buscando en la cadena de 
+prototipos del objeto hasta encontrarlo. Esto se conoce como herencia de 
+prototipos.
+
+Entonces, aunque no podemos encontrar directamente un método o propiedad en un 
+objeto, JavaScript desciende por la cadena de prototipos y lo encuentra allí, lo
+que lo hace accesible para su uso posterior.
+
+Este mecanismo de herencia de prototipos en JavaScript permite el uso de los 
+métodos y propiedades incorporados del lenguaje, ya que están disponibles en los
+prototipos de los objetos. 
+
 ---
