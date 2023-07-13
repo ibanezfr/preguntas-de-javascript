@@ -18,7 +18,7 @@
 13. [Fases de propagación de eventos en la programación de la interfaz de usuario](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#13-cu%C3%A1les-son-las-3-fases-de-la-propagaci%C3%B3n-de-eventos)
 14. [Herencia de prototipos y acceso a métodos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#14-todos-los-objetos-tienen-un-prototipo)
 15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-16. [Operadores unarios de incremento y sus resultados.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+16. [Operadores unarios de incremento y sus resultados. ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -741,7 +741,7 @@ console.log(numero);
 
 La correcta sería la C.
 
-Aquí debemos tener en cuenta el comportamiento del operador unario ++ :
+Aquí debemos tener en cuenta el comportamiento del operador unario ++ : <br>
 Si lo aplicamos `postfix`...(algo++)
 1. Devuelve el valor actual.
 2. Incrementa el valor en 1.
