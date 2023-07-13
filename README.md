@@ -682,13 +682,13 @@ sumar(2, "5");
 
 ```
 - A. `NaN`
-- B. `"25"`
+- B. `7`
 - C. `TypeError`
-- D. `7`
+- D. `"25"`
 
 <details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
 
-La correcta sería la B.
+La correcta sería la D.
 
 En JavaScript, no es necesario declarar explícitamente el tipo de una variable, 
 ya que se determina automáticamente durante la ejecución del programa. Esto se 
