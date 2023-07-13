@@ -18,6 +18,7 @@
 13. [Fases de propagación de eventos en la programación de la interfaz de usuario](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#13-cu%C3%A1les-son-las-3-fases-de-la-propagaci%C3%B3n-de-eventos)
 14. [Herencia de prototipos y acceso a métodos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#14-todos-los-objetos-tienen-un-prototipo)
 15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+16. [Operadores unarios de incremento y sus resultados.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -731,10 +732,10 @@ console.log(++numero);
 console.log(numero);
 
 ```
-- A. `1``1``1`
-- B. `1``2``2`
-- C. `0``2``2`
-- D. `0``1``2`
+- A. `1` `1` `1`
+- B. `1` `2` `2`
+- C. `0` `2` `2`
+- D. `0` `1` `2`
 
 <details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
 
