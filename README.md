@@ -666,6 +666,8 @@ Este mecanismo de herencia de prototipos en JavaScript permite el uso de los
 métodos y propiedades incorporados del lenguaje, ya que están disponibles en los
 prototipos de los objetos. 
 
+</p></details>
+
 ---
 
 # 15. ¿Qué devuelve esta función?
