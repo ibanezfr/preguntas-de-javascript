@@ -905,7 +905,7 @@ es considerado un tipo especial de objeto en JavaScript.
 
 <img src="./assets/images/19.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="350" height="200"
+     width="400" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
