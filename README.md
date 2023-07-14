@@ -19,6 +19,7 @@
 14. [Herencia de prototipos y acceso a métodos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#14-todos-los-objetos-tienen-un-prototipo)
 15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 16. [Operadores unarios de incremento y sus resultados. ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -722,6 +723,7 @@ cuidado al realizar operaciones para evitar resultados inesperados.
 </p></details>
 
 ---
+
 # 16. ¿Qué devuelve esta función?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
@@ -751,6 +753,61 @@ Si lo aplicamos `prefix`...(++algo)
 2. Devuelve el valor actual
 
 <img src="./assets/images/16.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 17. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function obtenerInfoPersona(uno, dos, tres){
+  console.log(uno);
+  console.log(dos);
+  console.log(tres);
+}
+const persona = "Franco";
+const edad = 27;
+
+obtenerInfoPersona`${persona} tiene ${edad} años`
+
+```
+- A. `"Franco"` `27` `[""," tiene ", " años"]`
+- B. `[""," tiene ", " años"]` `"Franco"` `27`
+- C. `"Franco"` `[""," tiene ", " años"]` `27`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la B.
+
+Las `plantillas etiquetadas` son una funcionalidad avanzada de las 
+`plantillas literales` en JavaScript. Al utilizar las plantillas etiquetadas, 
+podemos modificar la salida de las plantillas utilizando una función 
+personalizada (la `función etiquetada`).
+
+Cuando se utiliza una `plantilla etiquetada`, la llamada se convierte en una 
+invocación de función, donde la plantilla literal se pasa como argumento. El 
+primer argumento de la función es siempre un array que contiene las cadenas de 
+caracteres de la plantilla. Los argumentos restantes se asocian con las 
+expresiones de la plantilla.
+
+La `función etiquetada` puede realizar cualquier operación deseada con estos 
+argumentos. Puede manipular las cadenas de la plantilla, combinarlas con los 
+valores de las expresiones, realizar cálculos o cualquier otro procesamiento 
+necesario. Luego la función devuelve la cadena final manipulada o puede incluso
+un resultado completamente diferente, dependiendo de la lógica implementada 
+dentro de la función.
+
+Es importante destacar que el nombre de la función utilizada como etiqueta no 
+tiene nada de especial, puede ser cualquier nombre de función válido 
+en JavaScript.
+
+
+<img src="./assets/images/17.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
