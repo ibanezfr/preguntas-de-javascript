@@ -20,6 +20,7 @@
 15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 16. [Operadores unarios de incremento y sus resultados. ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#17-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+18. [Comparación de objetos en JavaScript]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -807,6 +808,58 @@ Es importante destacar que el nombre de la función utilizada como etiqueta no
 tiene nada de especial, puede ser cualquier nombre de función válido 
 en JavaScript.
 
+
+<img src="./assets/images/17.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+
+# 18. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function verificarEdad(data){
+  if(data === {edad: 18}){
+    console.log("¡Eres mayor de edad!");
+  }else if(data == {edad: 18}){
+    console.log("Aún eres mayor de edad.");
+  }else{
+    console.log("Hmm...Supongo que no tienes una edad.")
+  }
+}
+verificarEdad({edad: 18});
+```
+- A. `¡Eres mayor de edad!`
+- B. `Aún eres mayor de edad.`
+- C. `Hmm...Sunpongo que no tienes una edad.`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la C.
+
+La función `verificarEdad` verifica la edad de una persona según los datos 
+proporcionados. Al llamar a `verificarEdad({ edad: 18 })`, el resultado sería la 
+opción C: `"Hmm..Sunpong que no tienes edad"`.
+
+El código compara el parámetro data con objetos que contienen la propiedad edad 
+establecida en 18. Sin embargo, la comparación de objetos en `JavaScript` se 
+basa en la `referencia de memoria`, no en los valores de las propiedades.
+
+En la primera condición, `data === { edad: 18 }`, se utiliza el operador de 
+igualdad estricta ( `===` ), pero como los objetos no apuntan a la misma 
+ubicación en la memoria, la comparación devuelve false.
+
+En la segunda condición, `data == { edad: 18 }`, se utiliza el operador de 
+igualdad no estricta ( `==` ), que realiza una conversión de tipos. Sin embargo,
+la comparación de objetos sigue siendo basada en la referencia de memoria, por 
+lo que también devuelve false.
+
+Como ninguna de las condiciones anteriores se cumple, se ejecuta el bloque else 
+y se imprime `"Hmm..Sunpong que no tienes edad"`.
 
 <img src="./assets/images/17.webp"
      alt="Captura del output en la terminal del ejercicio"
