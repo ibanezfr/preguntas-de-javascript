@@ -20,7 +20,8 @@
 15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 16. [Operadores unarios de incremento y sus resultados. ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#17-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-18. [Comparación de objetos en JavaScript]()
+18. [Comparación de objetos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#18-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
