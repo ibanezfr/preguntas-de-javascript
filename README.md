@@ -869,3 +869,44 @@ y se imprime `"Hmm..Sunpong que no tienes edad"`.
 </p></details>
 
 ---
+
+# 19. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function obtenLaEdad(...args){
+  console.log(typeof args);
+}
+obtenLaEdad(27);
+```
+- A. `number`
+- B. `array`
+- C. `object`
+- D. `NaN`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la C.
+
+El [operador de propagación (spread operator) (...)](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+se utiliza para convertir los argumentos de una función en un array.
+Al usar el operador spread, los argumentos se colocan dentro de corchetes [], 
+lo que crea un nuevo array con esos elementos.
+
+Dado que un array es un tipo de objeto en JavaScript, el operador typeof 
+devuelve `"object"` cuando se aplica a un array. Esto se debe a que, desde el 
+punto de vista de JavaScript, un array es un objeto especializado que contiene 
+una colección ordenada de elementos.
+
+En resumen, el operador de propagación ( `...` ) se utiliza para convertir los 
+argumentos en un array, y `typeof args` devolverá "object" debido a que un array 
+es considerado un tipo especial de objeto en JavaScript.
+
+<img src="./assets/images/19.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="350" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
