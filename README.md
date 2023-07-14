@@ -861,7 +861,7 @@ lo que también devuelve false.
 Como ninguna de las condiciones anteriores se cumple, se ejecuta el bloque else 
 y se imprime `"Hmm..Sunpong que no tienes edad"`.
 
-<img src="./assets/images/17.webp"
+<img src="./assets/images/18.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
