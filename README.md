@@ -19,7 +19,7 @@
 14. [Herencia de prototipos y acceso a métodos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#14-todos-los-objetos-tienen-un-prototipo)
 15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 16. [Operadores unarios de incremento y sus resultados. ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales]()
+17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#17-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -784,10 +784,11 @@ obtenerInfoPersona`${persona} tiene ${edad} años`
 
 La correcta sería la B.
 
-Las `plantillas etiquetadas` son una funcionalidad avanzada de las 
-`plantillas literales` en JavaScript. Al utilizar las plantillas etiquetadas, 
-podemos modificar la salida de las plantillas utilizando una función 
-personalizada (la `función etiquetada`).
+Las [`plantillas etiquetadas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals#plantillas_etiquetadas)
+son una funcionalidad avanzada de las `plantillas literales` en JavaScript. 
+Al utilizar las plantillas etiquetadas, podemos modificar la salida de las 
+plantillas utilizando una función personalizada (la `función etiquetada`).
+[Más info](https://codeburst.io/javascript-template-literals-tag-functions-for-beginners-758a041160e1)
 
 Cuando se utiliza una `plantilla etiquetada`, la llamada se convierte en una 
 invocación de función, donde la plantilla literal se pasa como argumento. El 
