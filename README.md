@@ -631,9 +631,12 @@ console.log(sarah);
 - C: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `{}`
 - D: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `ReferenceError`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la A.
+## La correcta es la `A`.
+
+<div align="left">
 
 Cuando se crean las 2 instancias de la clase Persona, la instancia `franco` se 
 crea utilizando la palabra reservada `new`, lo que significa que se crea un 
@@ -643,7 +646,7 @@ Al crear la instancia `juan`, no se utiliza la palabra reservada `this`. Dentro
 de la función Persona, el `this` se refiere al objeto global en lugar de crear 
 un nuevo objeto. Las propiedades `nombre` y `apellido` se asignan al objeto 
 global en lugar de a un nuevo objeto.
-
+</div>
 
 <img src="./assets/images/12.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -651,6 +654,9 @@ global en lugar de a un nuevo objeto.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
+
+---
 
 # 13. ¿Cuáles son las 3 fases de la propagación de eventos?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
@@ -661,9 +667,12 @@ global en lugar de a un nuevo objeto.
 - C: `Target` > `Bubbling` > `Capturing`
 - D: `Capturing` > `Target` > `Bubbling`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta seŕia la D.
+## La correcta es la `D`.
+
+<div align="left">
 
 Estas fases son importantes en la programación de eventos en el ámbito de la 
 interfaz de usuario y se refieren al orden en que los eventos se propagan a 
@@ -687,7 +696,7 @@ adecuadamente los eventos en la programación de la interfaz de usuario.
 Dependiendo del caso de uso, se puede aprovechar la fase de Capturing o la fase 
 de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 
-
+</div>
 
 <img src="https://camo.githubusercontent.com/5fd2d347d044150e4ae35091622f0628f0eb7893966f03c8955ca271f3153e47/68747470733a2f2f692e696d6775722e636f6d2f4e31386f5267642e706e67"
      alt="Captura del output en la terminal del ejercicio"
@@ -695,7 +704,8 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
- 
+ </div>
+
 ---
 
 # 14. Todos los objetos tienen un prototipo.
@@ -705,9 +715,12 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 - A: `Verdadero`
 - B: `Falso`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta seŕia la B.
+## La correcta es la `B`.
+
+<div align="left">
 
 En JavaScript, todos los objetos tienen un prototipo, excepto el [objeto base](https://stackoverflow.com/questions/56659303/what-is-base-object-in-javascript).
 El objeto base es el punto final de la cadena de prototipos y no tiene ningún 
@@ -736,7 +749,10 @@ Este mecanismo de herencia de prototipos en JavaScript permite el uso de los
 métodos y propiedades incorporados del lenguaje, ya que están disponibles en los
 prototipos de los objetos. 
 
+</div>
+
 </p></details>
+</div>
 
 ---
 
@@ -756,9 +772,12 @@ sumar(2, "5");
 - C. `TypeError`
 - D. `"25"`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la D.
+## La correcta es la `D`.
+
+<div align="left">
 
 En JavaScript, no es necesario declarar explícitamente el tipo de una variable, 
 ya que se determina automáticamente durante la ejecución del programa. Esto se 
@@ -781,12 +800,15 @@ forma automática según el contexto de la operación o expresión. Esto
 proporciona flexibilidad en la manipulación de valores, pero también requiere 
 cuidado al realizar operaciones para evitar resultados inesperados.
 
+</div>
+
 <img src="./assets/images/15.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -805,9 +827,12 @@ console.log(numero);
 - C. `0` `2` `2`
 - D. `0` `1` `2`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la C.
+## La correcta es la `C`.
+
+<div align="left">
 
 Aquí debemos tener en cuenta el comportamiento del operador unario ++ : <br>
 Si lo aplicamos `postfix`...(algo++)
@@ -818,12 +843,15 @@ Si lo aplicamos `prefix`...(++algo)
 1. Incrementa el valor en 1
 2. Devuelve el valor actual
 
+</div>
+
 <img src="./assets/images/16.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -846,9 +874,12 @@ obtenerInfoPersona`${persona} tiene ${edad} años`
 - B. `[""," tiene ", " años"]` `"Franco"` `27`
 - C. `"Franco"` `[""," tiene ", " años"]` `27`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la B.
+## La correcta es la `B`.
+
+<div align="left">
 
 Las [`plantillas etiquetadas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals#plantillas_etiquetadas)
 son una funcionalidad avanzada de las `plantillas literales` en JavaScript. 
@@ -873,6 +904,7 @@ Es importante destacar que el nombre de la función utilizada como etiqueta no
 tiene nada de especial, puede ser cualquier nombre de función válido 
 en JavaScript.
 
+</div>
 
 <img src="./assets/images/17.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -880,6 +912,7 @@ en JavaScript.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
