@@ -448,7 +448,7 @@ Esto causa un TypeError.
 
 <img src="./assets/images/8.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="350" height="200"
+     width="500" height="340"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
