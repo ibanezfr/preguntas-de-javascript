@@ -47,7 +47,7 @@ let edad = 27
 <details><summary><b>RESPUESTA</b></summary>
 <p>
    
-#### La correcta es la B
+## La correcta es la `B`.
 
 <div align="left">
 
@@ -102,7 +102,7 @@ for(let i = 5; i < 8; i++){
 <details><summary><b>RESPUESTA</b></summary>
 <p>
 
-## La correcta es la C.
+## La correcta es la `C`.
 
 <div align="left">
 
@@ -186,7 +186,7 @@ console.log(forma.perimetro());
 <details><summary><b>RESPUESTA</b></summary>
 <p>
 
-## La correcta es la B.
+## La correcta es la `B`.
 
 <div align="left">
 
@@ -229,7 +229,7 @@ se imprimirá NaN.
 <div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-## La correcta es la A.
+## La correcta es la `A`.
 
 <div align="left">
 En el primer caso `+true` se trata de convertir el valor booleano `true` en un 
@@ -269,9 +269,12 @@ el valor booleano false.
 - B: `raton[pajarito.tamanio]`
 - C: `raton[pajarito["tamanio"]]`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La incorrecta sería la A.
+## La incorrecta sería la A.
+
+<div align="left">
 
 En JavaScript, todas las claves de un objeto se interpretan como [`cadenas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
 , a menos que sean de tipo "símbolo". Aunque no las escribamos explícitamente 
@@ -295,6 +298,7 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 `undefined.tamanio`. Esto no es válido y generará un error similar a 
 "Cannot read property `'tamanio'` of undefined".
 
+</div>
 
 <img src="./assets/images/5.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -302,6 +306,7 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -321,8 +326,12 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 - C: `ReferenceError`
 - D: `TypeError`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
-La correcta es la A.
+
+## La correcta es la `A`.
+
+<div align="center">
 
 En `JavaScript`, los objetos se manejan por referencia. Cuando se asignan a 
 variables o se pasan como argumentos a funciones, todos apuntan a la misma 
@@ -339,12 +348,15 @@ también en la variable `b` porque ambas apuntan al mismo objeto.
 En `JavaScript`, cuando se cambia un objeto, todos los objetos que compartan la 
 misma referencia se verán afectados por ese cambio.
 
+</div>
+
 <img src="./assets/images/6.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="500" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -366,9 +378,12 @@ misma referencia se verán afectados por ese cambio.
 - C. `true` `false` `false`
 - D. `false` `true` `true`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la C.
+## La correcta es la `C`.
+
+<div align="left">
 
 "`new Number( )`" es un constructor de funciones integrado en JavaScript. 
 Aunque parece representar un número, en realidad es un objeto con 
@@ -382,6 +397,7 @@ sin embargo, cuando utilizamos el operador `"==="`, se verifica tanto el valor
 como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objeto
 , los dos valores no son iguales y se devuelve `"false"`.
 
+</div>
 
 <img src="./assets/images/7.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -389,6 +405,7 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -415,14 +432,19 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 - C. `azul`
 - D. `TypeError`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la D. `TypeError`.
+## La correcta es la `D`.
+
+<div align="left">
 
 El método cambiarColor es estático y no se puede acceder a través de una 
 instancia como `manchita.cambiarColor("naranja")`. Debería ser llamado 
 directamente en la clase camaleon, como `camaleon.cambiarColor("naranja")`. 
 Esto causa un TypeError.
+
+</div>
 
 <img src="./assets/images/8.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -430,6 +452,7 @@ Esto causa un TypeError.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -446,9 +469,12 @@ Esto causa un TypeError.
 - B. `ReferenceError: asludo is not defined`
 - C. `undefined`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la A.
+## La correcta es la `A`.
+
+<div align="left">
 
 En este caso, JavaScript registra el objeto porque acabamos de crear un objeto 
 vacío en el objeto global. Cuando escribimos erróneamente `saludo` como `asludo`
@@ -460,7 +486,7 @@ Para evitar este tipo de errores, podemos utilizar el `"modo estricto"`
 Esto garantiza que una variable se declare antes de asignarle 
 cualquier valor.
 
-
+</div>
 
 <img src="./assets/images/9a.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -472,6 +498,7 @@ cualquier valor.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -491,9 +518,12 @@ cualquier valor.
 - C. `undefined`
 - D. `ReferenceError`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la A.
+## La correcta es la `A`.
+
+<div align="left">
 
 En JavaScript las funciones son `objetos`.(Excepto los tipos primitivos, `todo` 
 es un objeto en JavaScript).
@@ -502,13 +532,15 @@ Una función se considera un objeto. El código que escribas no es en realidad l
 función en sí, sino que la función es un objeto que posee propiedades. Una de 
 esas propiedades es la capacidad de ser invocada.
 
+</div>
+
 <img src="./assets/images/10.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
      style="border: 1px solid black; text-align: center;">
 
-
 </p></details>
+</div>
 
 ---
 
@@ -535,9 +567,12 @@ console.log(asociado.obtenerNombreCompleto());
 - C. `Franco Ibañez`
 - D. `undefined` `undefined`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la A.
+## La correcta es la `A`.
+
+<div align="left">
 
 En JavaScript, no es posible añadir propiedades a un constructor como se hace 
 con los objetos. Para agregar una característica a todos los objetos al mismo 
@@ -558,6 +593,8 @@ de "Persona" tendrían esta propiedad, lo que consumiría más memoria. Sin emba
 instancias pueden acceder a él. Esto evita el desperdicio innecesario de espacio 
 de espacio en memoria.
 
+</div>
+
 <img src="./assets/images/11a.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="350" height="200"
@@ -568,6 +605,7 @@ de espacio en memoria.
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
