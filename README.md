@@ -966,7 +966,7 @@ y se imprime `"Hmm..Sunpong que no tienes edad"`.
 
 <img src="./assets/images/18.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="420" height="250"
+     width="520" height="350"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
