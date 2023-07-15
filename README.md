@@ -27,6 +27,7 @@
 ---
 # 1. ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+<!-- El link del índice pensado para ser clickeado desde el navegador -->
 
 ```javascript
 function saluda(){
@@ -46,7 +47,7 @@ let edad = 27
 <details><summary><b>RESPUESTA</b></summary>
 <p>
    
-#### La correcta sería la B
+#### La correcta es la B
 
 <div align="left">
 
@@ -97,10 +98,13 @@ for(let i = 5; i < 8; i++){
 - C: `7 7 7`  y  `5 6 7`
 
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary>
 <p>
 
-La correcta sería la C.
+## La correcta es la C.
+
+<div align="left">
 
 En JavaScript, las funciones [`setTimeout`](https://developer.mozilla.org/es/docs/Web/API/setTimeout)
 se ejecutan de forma asíncrona. Esto significa que se colocan en la cola de 
@@ -131,6 +135,8 @@ final del bucle. Con `let`, se crea una nueva variable `i` en cada iteración de
 bucle, lo que permite que cada función `setTimeout` capture el valor 
 correspondiente a su propia iteración.
 
+</div>
+
 <img src="./assets/images/2a.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="500" height="150"
@@ -152,7 +158,7 @@ correspondiente a su propia iteración.
      style="border: 1px solid black; text-align: center;">
 </p>
 </details>
-
+</div>
 ---
 
 # 3. ¿Qué imprimirían estos console.log( ) ?
@@ -175,10 +181,15 @@ console.log(forma.perimetro());
 - C: `20` y `63`
 - D: `NaN` y `63`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary>
 <p>
 
-Sería la `B`, porque `forma.diametro()` es una función regular que accede 
+## La correcta es la B.
+
+<div align="left">
+
+Porque `forma.diametro()` es una función regular que accede 
 correctamente a la propiedad `radio` del objeto `forma` utilizando la palabra 
 clave `this`. Por lo tanto, al llamar a `console.log(forma.diametro())`, se 
 imprimirá el valor de 20.
@@ -191,13 +202,15 @@ circundante, se devuelve `undefined`, y al realizar el cálculo, el resultado es
 NaN (Not a Number). Por lo tanto, al llamar a `console.log(forma.perimetro())`, 
 se imprimirá NaN.
 
+</div>
+
 <img src="./assets/images/3.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="500" height="250"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
-
+</div>
 --- 
 
 # 4. ¿Qué devolvería el siguiente código?
@@ -211,10 +224,12 @@ se imprimirá NaN.
 - B: `false` y `NaN`
 - C: `false` y `false`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la A.
+## La correcta es la A.
 
+<div align="left">
 En el primer caso `+true` se trata de convertir el valor booleano `true` en un 
 número. Cuando se convierte un valor booleano a número, `true` se convierte en 1
 y `false` se convierte en 0. Por lo tanto, `+true` devuelve el número 1.
@@ -224,14 +239,14 @@ aplica a la cadena de texto "Franco". En JavaScript, cualquier cadena de texto
 vacía se considera verdadera en un contexto booleano. Al negarla, estamos 
 preguntando si este valor verdader es falso. Por lo tanto, `!"Franco"` devuelve
 el valor booleano false.
-
+</div>
 <img src="./assets/images/4.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="500" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
-
+</div>
 ---
 
 # 5. ¿Cuál de éstas opciones es incorrecta?
@@ -304,7 +319,7 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 - D: `TypeError`
 
 <details><summary><b>RESPUESTA</b></summary> <p>
-La correcta sería la A.
+La correcta es la A.
 
 En `JavaScript`, los objetos se manejan por referencia. Cuando se asignan a 
 variables o se pasan como argumentos a funciones, todos apuntan a la misma 
@@ -350,7 +365,7 @@ misma referencia se verán afectados por ese cambio.
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la C.
+La correcta es la C.
 
 "`new Number( )`" es un constructor de funciones integrado en JavaScript. 
 Aunque parece representar un número, en realidad es un objeto con 
@@ -399,7 +414,7 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la D. `TypeError`.
+La correcta es la D. `TypeError`.
 
 El método cambiarColor es estático y no se puede acceder a través de una 
 instancia como `manchita.cambiarColor("naranja")`. Debería ser llamado 
@@ -430,7 +445,7 @@ Esto causa un TypeError.
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la A.
+La correcta es la A.
 
 En este caso, JavaScript registra el objeto porque acabamos de crear un objeto 
 vacío en el objeto global. Cuando escribimos erróneamente `saludo` como `asludo`
@@ -519,7 +534,7 @@ console.log(asociado.obtenerNombreCompleto());
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la A.
+La correcta es la A.
 
 En JavaScript, no es posible añadir propiedades a un constructor como se hace 
 con los objetos. Para agregar una característica a todos los objetos al mismo 
@@ -577,7 +592,7 @@ console.log(sarah);
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la A.
+La correcta es la A.
 
 Cuando se crean las 2 instancias de la clase Persona, la instancia `franco` se 
 crea utilizando la palabra reservada `new`, lo que significa que se crea un 
@@ -702,7 +717,7 @@ sumar(2, "5");
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la D.
+La correcta es la D.
 
 En JavaScript, no es necesario declarar explícitamente el tipo de una variable, 
 ya que se determina automáticamente durante la ejecución del programa. Esto se 
@@ -751,7 +766,7 @@ console.log(numero);
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la C.
+La correcta es la C.
 
 Aquí debemos tener en cuenta el comportamiento del operador unario ++ : <br>
 Si lo aplicamos `postfix`...(algo++)
@@ -792,7 +807,7 @@ obtenerInfoPersona`${persona} tiene ${edad} años`
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la B.
+La correcta es la B.
 
 Las [`plantillas etiquetadas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals#plantillas_etiquetadas)
 son una funcionalidad avanzada de las `plantillas literales` en JavaScript. 
@@ -848,7 +863,7 @@ verificarEdad({edad: 18});
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta sería la C.
+La correcta es la C.
 
 La función `verificarEdad` verifica la edad de una persona según los datos 
 proporcionados. Al llamar a `verificarEdad({ edad: 18 })`, el resultado sería la 
@@ -897,7 +912,7 @@ obtenLaEdad(27);
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-## La correcta sería la C.
+## La correcta es la C.
 
 <div align="left">
 
@@ -948,7 +963,7 @@ obtenerEdad();
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-## La correcta sería la C.
+## La correcta es la C.
 
 <div align="left">
 
