@@ -933,7 +933,7 @@ obtenerEdad();
 
 <div align="center">
 
-# La correcta sería la C.
+## La correcta sería la C.
 
 </div>
 
