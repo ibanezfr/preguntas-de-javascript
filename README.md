@@ -931,7 +931,11 @@ obtenerEdad();
 
 <details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
 
-La correcta sería la C.
+<div align="center">
+
+# La correcta sería la C.
+
+</div>
 
 Al utilizar `"use strict"`, se garantiza que no se declaren variables globales 
 de manera accidental. En este caso, no declaramos la variable `edad`, y debido a
@@ -939,11 +943,12 @@ la inclusión de `"use strict"`, se generará un error de referencia. Si no
 hubiéramos utilizado `"use strict"`, la operación habría funcionado 
 correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
 
+<div align="center">
 <img src="./assets/images/20.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="450" height="250"
      style="border: 1px solid black; text-align: center;">
-
+</div>
 </p></details>
 
 ---
