@@ -935,9 +935,12 @@ verificarEdad({edad: 18});
 - B. `Aún eres mayor de edad.`
 - C. `Hmm...Sunpongo que no tienes una edad.`
 
+<div align="center">
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-La correcta es la C.
+## La correcta es la `C`.
+
+<div align="left">
 
 La función `verificarEdad` verifica la edad de una persona según los datos 
 proporcionados. Al llamar a `verificarEdad({ edad: 18 })`, el resultado sería la 
@@ -959,12 +962,15 @@ lo que también devuelve false.
 Como ninguna de las condiciones anteriores se cumple, se ejecuta el bloque else 
 y se imprime `"Hmm..Sunpong que no tienes edad"`.
 
+</div>
+
 <img src="./assets/images/18.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="420" height="250"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+</div>
 
 ---
 
@@ -986,7 +992,7 @@ obtenLaEdad(27);
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-## La correcta es la C.
+## La correcta es la `C`.
 
 <div align="left">
 
