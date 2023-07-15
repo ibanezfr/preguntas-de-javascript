@@ -41,11 +41,15 @@ let edad = 27
 - C: `Franco` y `undefined`
 - D: `Franco` y `ReferenceError`
   
+<div align="center">
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary>
+<details><summary><b>RESPUESTA</b></summary>
 <p>
    
 #### La correcta sería la B
+
+<div align="left">
+
 1. Para las variables declaradas con `var`, durante la fase de creación del 
 contexto de ejecución, se reserva un espacio en memoria y se asigna el valor 
 predeterminado `undefined`. Esto se conoce como 
@@ -61,6 +65,7 @@ variable `let` o `const` antes de su declaración, se lanzará un `ReferenceErro
 . En el ejemplo, la variable `edad` de declara con `let`, y como intentamos 
 acceder a ella antes de su declaración, se produce un `ReferenceError`.
 
+</div>
 
 <img src="./assets/images/1.webp"
      alt="Captura del output en la terminal del ejercicio"
@@ -70,6 +75,8 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 
 </p>
 </details>
+
+</div>
 
 ---
 
@@ -90,7 +97,7 @@ for(let i = 5; i < 8; i++){
 - C: `7 7 7`  y  `5 6 7`
 
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary>
+<details><summary><b>RESPUESTA</b></summary>
 <p>
 
 La correcta sería la C.
@@ -168,7 +175,7 @@ console.log(forma.perimetro());
 - C: `20` y `63`
 - D: `NaN` y `63`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary>
+<details><summary><b>RESPUESTA</b></summary>
 <p>
 
 Sería la `B`, porque `forma.diametro()` es una función regular que accede 
@@ -204,7 +211,7 @@ se imprimirá NaN.
 - B: `false` y `NaN`
 - C: `false` y `false`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la A.
 
@@ -244,7 +251,7 @@ el valor booleano false.
 - B: `raton[pajarito.tamanio]`
 - C: `raton[pajarito["tamanio"]]`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La incorrecta sería la A.
 
@@ -296,7 +303,7 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 - C: `ReferenceError`
 - D: `TypeError`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 La correcta sería la A.
 
 En `JavaScript`, los objetos se manejan por referencia. Cuando se asignan a 
@@ -341,7 +348,7 @@ misma referencia se verán afectados por ese cambio.
 - C. `true` `false` `false`
 - D. `false` `true` `true`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la C.
 
@@ -390,7 +397,7 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 - C. `azul`
 - D. `TypeError`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la D. `TypeError`.
 
@@ -421,7 +428,7 @@ Esto causa un TypeError.
 - B. `ReferenceError: asludo is not defined`
 - C. `undefined`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la A.
 
@@ -466,7 +473,7 @@ cualquier valor.
 - C. `undefined`
 - D. `ReferenceError`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta es la A.
 
@@ -510,7 +517,7 @@ console.log(asociado.obtenerNombreCompleto());
 - C. `Franco Ibañez`
 - D. `undefined` `undefined`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la A.
 
@@ -568,7 +575,7 @@ console.log(sarah);
 - C: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `{}`
 - D: `Persona {nombre: "Franco", apellido: "Ibañez"}` y `ReferenceError`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la A.
 
@@ -598,7 +605,7 @@ global en lugar de a un nuevo objeto.
 - C: `Target` > `Bubbling` > `Capturing`
 - D: `Capturing` > `Target` > `Bubbling`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta seŕia la D.
 
@@ -642,7 +649,7 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 - A: `Verdadero`
 - B: `Falso`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta seŕia la B.
 
@@ -693,7 +700,7 @@ sumar(2, "5");
 - C. `TypeError`
 - D. `"25"`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la D.
 
@@ -742,7 +749,7 @@ console.log(numero);
 - C. `0` `2` `2`
 - D. `0` `1` `2`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la C.
 
@@ -783,7 +790,7 @@ obtenerInfoPersona`${persona} tiene ${edad} años`
 - B. `[""," tiene ", " años"]` `"Franco"` `27`
 - C. `"Franco"` `[""," tiene ", " años"]` `27`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la B.
 
@@ -839,7 +846,7 @@ verificarEdad({edad: 18});
 - B. `Aún eres mayor de edad.`
 - C. `Hmm...Sunpongo que no tienes una edad.`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 La correcta sería la C.
 
@@ -886,9 +893,13 @@ obtenLaEdad(27);
 - C. `object`
 - D. `NaN`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+<div align="center">
 
-La correcta sería la C.
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta sería la C.
+
+<div align="left">
 
 El [operador de propagación (spread operator) (...)](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 se utiliza para convertir los argumentos de una función en un array.
@@ -904,12 +915,16 @@ En resumen, el operador de propagación ( `...` ) se utiliza para convertir los
 argumentos en un array, y `typeof args` devolverá "object" debido a que un array 
 es considerado un tipo especial de objeto en JavaScript.
 
+</div>
+
 <img src="./assets/images/19.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="200"
      style="border: 1px solid black; text-align: center;">
 
 </p></details>
+
+</div>
 
 ---
 # 20. ¿Qué devuelve esta función?
@@ -929,13 +944,13 @@ obtenerEdad();
 - C. `ReferenceError`
 - D. `TypeError`
 
-<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
-
 <div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
 
 ## La correcta sería la C.
 
-</div>
+<div align="left">
 
 Al utilizar `"use strict"`, se garantiza que no se declaren variables globales 
 de manera accidental. En este caso, no declaramos la variable `edad`, y debido a
@@ -943,12 +958,14 @@ la inclusión de `"use strict"`, se generará un error de referencia. Si no
 hubiéramos utilizado `"use strict"`, la operación habría funcionado 
 correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
 
-<div align="center">
+</div>
+
 <img src="./assets/images/20.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="450" height="250"
      style="border: 1px solid black; text-align: center;">
-</div>
 </p></details>
+
+</div>
 
 ---
