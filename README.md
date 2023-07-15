@@ -22,6 +22,7 @@
 17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#17-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 18. [Comparación de objetos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#18-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -904,6 +905,42 @@ argumentos en un array, y `typeof args` devolverá "object" debido a que un arra
 es considerado un tipo especial de objeto en JavaScript.
 
 <img src="./assets/images/19.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="200"
+     style="border: 1px solid black; text-align: center;">
+
+</p></details>
+
+---
+# 20. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+function obtenerEdad(){
+  "use strict";
+  edad = 21;
+  console.log(edad);
+}
+
+edad();
+```
+- A. `21`
+- B. `undefined`
+- C. `ReferenceError`
+- D. `TypeError`
+
+<details><summary><b>Opción correcta y explicación propuesta</b></summary> <p>
+
+La correcta sería la C.
+
+Al utilizar `"use strict"`, se garantiza que no se declaren variables globales 
+de manera accidental. En este caso, no declaramos la variable `edad`, y debido a
+la inclusión de `"use strict"`, se generará un error de referencia. Si no 
+hubiéramos utilizado `"use strict"`, la operación habría funcionado 
+correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
+
+
+<img src="./assets/images/20.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="200"
      style="border: 1px solid black; text-align: center;">
