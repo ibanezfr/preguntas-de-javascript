@@ -939,8 +939,10 @@ la inclusión de `"use strict"`, se generará un error de referencia. Si no
 hubiéramos utilizado `"use strict"`, la operación habría funcionado 
 correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
 
-![Terminal output](./assets/images/20.webp)
-
+<img src="./assets/images/20.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="450" height="250"
+     style="border: 1px solid black; text-align: center;">
 
 </p></details>
 
