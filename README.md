@@ -918,13 +918,13 @@ es considerado un tipo especial de objeto en JavaScript.
 ```javascript
 function obtenerEdad(){
   "use strict";
-  edad = 21;
+  edad = 27;
   console.log(edad);
 }
 
 obtenerEdad();
 ```
-- A. `21`
+- A. `27`
 - B. `undefined`
 - C. `ReferenceError`
 - D. `TypeError`
