@@ -159,6 +159,7 @@ correspondiente a su propia iteración.
 </p>
 </details>
 </div>
+
 ---
 
 # 3. ¿Qué imprimirían estos console.log( ) ?
@@ -211,6 +212,7 @@ se imprimirá NaN.
 
 </p></details>
 </div>
+
 --- 
 
 # 4. ¿Qué devolvería el siguiente código?
@@ -247,6 +249,7 @@ el valor booleano false.
 
 </p></details>
 </div>
+
 ---
 
 # 5. ¿Cuál de éstas opciones es incorrecta?
