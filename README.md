@@ -22,7 +22,7 @@
 17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#17-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 18. [Comparación de objetos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#18-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales]()
+20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#20-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
