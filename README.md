@@ -23,6 +23,7 @@
 18. [Comparación de objetos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#18-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#20-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+21. [Evaluación de una cadena: el uso de eval()]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1022,6 +1023,7 @@ es considerado un tipo especial de objeto en JavaScript.
 </div>
 
 ---
+
 # 20. ¿Qué devuelve esta función?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
@@ -1056,6 +1058,45 @@ correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
 </div>
 
 <img src="./assets/images/20.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="450" height="250"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 21. ¿Cuál es el valor de `suma`?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+const suma = eval("10*10+5");
+```
+- A. `105`
+- B. `"105"`
+- C. `TypeError`
+- D. `"10*10+5"`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la A.
+
+<div align="left">
+
+El código proporcionado declara una constante llamada `"sum"` y le asigna el 
+resultado de evaluar la expresión `"10*10+5"`. La evaluación de esta expresión 
+resulta en el número `105`.
+
+La función `eval()` se utiliza para evaluar códigos proporcionados como una 
+cadena. En este caso, la cadena contiene una expresión aritmética que se evalúa 
+y devuelve el resultado numérico.
+
+</div>
+
+<img src="./assets/images/21.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="450" height="250"
      style="border: 1px solid black; text-align: center;">
