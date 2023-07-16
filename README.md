@@ -23,7 +23,7 @@
 18. [Comparación de objetos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#18-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#20-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-21. [Evaluación de una cadena: el uso de eval()](https://github.com/lydiahallie/javascript-questions/blob/master/es-ES/README-ES.md#21-cu%C3%A1l-es-el-valor-de-sum)
+21. [Evaluación de una cadena: el uso de eval()](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#21-cu%C3%A1l-es-el-valor-de-suma)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
