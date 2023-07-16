@@ -1098,7 +1098,7 @@ y devuelve el resultado numérico.
 
 <img src="./assets/images/21.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="450" height="250"
+     width="400" height="200"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
