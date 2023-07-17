@@ -26,6 +26,8 @@
 21. [Evaluación de una cadena: el uso de eval()](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#21-cu%C3%A1l-es-el-valor-de-suma)
 22. [Persistencia de datos: Impacto al cerrar la pestaña o el navegador.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#22-por-cu%C3%A1nto-tiempo-accesible-sabroso_secreto)
 23. [Diferencias de alcance entre `var`, `let` y `const` en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#23-cu%C3%A1l-es-el-valor-de-suma)
+24. [Diferencias en el manejo de claves entre objeto y conjuntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#24-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+25. [Sustitución de claves en objetos: un ejemplo de actualización de valores en duplicados](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#25-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
