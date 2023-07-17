@@ -24,6 +24,7 @@
 19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#20-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 21. [Evaluación de una cadena: el uso de eval()](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#21-cu%C3%A1l-es-el-valor-de-suma)
+22. []()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1100,6 +1101,39 @@ y devuelve el resultado numérico.
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="170"
      style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 22. ¿Por cuánto tiempo accesible `sabroso_secreto`?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+sessionStorage.setItem("sabroso_secreto", 123);
+```
+- A. `Para siempre, los datos no se pierden.`
+- B. `Cuando el usuario cierra todo el navegador, no sólo la pestaña.`
+- C. `Cuando el usuario cierra la pestaña.`
+- D. `Cuando el usuario apaga la computadora.`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+Los datos que se guardan en `sessionStorage` se eliminan al cerrar la pestaña 
+del navegador.
+
+De haberse usado `localStorage`, los datos habrían estado allí siempre, a menos
+que se invoque `localStorage.clear()`.
+
+</div>
+
 </p></details>
 
 </div>
