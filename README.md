@@ -1227,3 +1227,39 @@ en nuestro set, `set.has("1")` devuelve `falso`. Tiene el tipo numérico
 </div>
 
 ---
+
+# 25. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+const objeto = { a: "uno", b: "dos", a: "tres" };
+console.log(objeto);
+```
+- A. `{ a: "uno", b: "dos"}`
+- B. `{ b: "dos", a: "tres"}`
+- C. `{ a: "tres", b: "dos"}`
+- D. `SyntaxError`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la C.
+
+<div align="left">
+
+Si el objeto tiene dos claves con el mismo nombre, la clave será 
+reemplazada. Su posición seguirá siendo la primera, pero con el valor
+actualizado al último especeficado.
+
+</div>
+
+<img src="./assets/images/25.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
