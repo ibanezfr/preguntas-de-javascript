@@ -1178,3 +1178,52 @@ No sucede lo mismo con `let` y `const` porque tienen un alcance de bloque.
 </div>
 
 ---
+
+# 24. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+const objeto = {
+		1: "a",
+		2: "b", 
+		3: "c" 
+	  };
+const conjunto = new Set([1, 2, 3, 4, 5]);
+
+objeto.hasOwnProperty("1");
+objeto.hasOwnProperty(1);
+conjunto.has("1");
+conjunto.has(1);
+```
+- A. `false` `true` `false` `true`
+- B. `false` `true` `true` `true`
+- C. `true` `true` `false` `true`
+- D. `true` `true` `true` `true`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la C.
+
+<div align="left">
+
+Todas las claves de un objeto (excepto las que utilizan símbolos como 
+clave) actúan como cadenas, incluso si no son escritas como una cadena.
+Es por eso que `obj.hasOwnProperty("1")` también devuelve verdadero.
+
+En cambio en el caso de un conjunto no funciona así. Como no hay un "1"
+en nuestro set, `set.has("1")` devuelve `falso`. Tiene el tipo numérico
+`1`, `set.has(1)` devuelve `true`.
+
+</div>
+
+<img src="./assets/images/24.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
