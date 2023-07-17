@@ -1139,3 +1139,41 @@ que se invoque `localStorage.clear()`.
 </div>
 
 ---
+
+# 23. ¿Cuál es el valor de `suma`?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+var numero = 5;
+var numero = 15;
+console.log(numero);
+```
+- A. `5`
+- B. `15`
+- C. `SyntaxError`
+- D. `ReferenceError`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la B.
+
+<div align="left">
+
+Mediante la palabra reservada `var` se puden declarar múltiples variables con el 
+mismo nombre. Pero tomará el último valor que le asigne.
+
+No sucede lo mismo con `let` y `const` porque tienen un alcance de bloque.
+
+</div>
+
+<img src="./assets/images/23.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
