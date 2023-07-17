@@ -1141,7 +1141,7 @@ que se invoque `localStorage.clear()`.
 
 ---
 
-# 23. ¿Cuál es el valor de `suma`?
+# 23. ¿Qué imprime `console.log( )`?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
