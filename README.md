@@ -1220,7 +1220,7 @@ en nuestro set, `set.has("1")` devuelve `falso`. Tiene el tipo numérico
 
 <img src="./assets/images/24.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="400" height="150"
+     width="400" height="300"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
