@@ -28,6 +28,7 @@
 23. [Diferencias de alcance entre `var`, `let` y `const` en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#23-cu%C3%A1l-es-el-valor-de-suma)
 24. [Diferencias en el manejo de claves entre objeto y conjuntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#24-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 25. [Sustitución de claves en objetos: un ejemplo de actualización de valores en duplicados](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#25-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+26. [El contexto de ejecución en JavaScript: Creación el objeto global y la palabra reservada "this"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#26-el-contexto-de-ejecuci%C3%B3n-de-javascript-crea-dos-cosas-el-objeto-global-y-la-palabra-reservada-this)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1290,10 +1291,6 @@ en Node.js) y a la palabra reservada `"this"`.
 
 </div>
 
-<img src="./assets/images/25.webp"
-     alt="Captura del output en la terminal del ejercicio"
-     width="400" height="150"
-     style="border: 1px solid black; text-align: center;">
 </p></details>
 
 </div>
