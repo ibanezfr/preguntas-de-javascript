@@ -1265,3 +1265,37 @@ actualizado al último especeficado.
 </div>
 
 ---
+
+# 26. El contexto de ejecución de JavaScript crea dos cosas: el objeto global y la palabra reservada `"this"`.
+
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+- A. `Verdadero` 
+- B. `Falso`
+- C. `Depende`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+En el contexto de ejecución de JavaScript, se crean dos cosas: el objeto global 
+y la palabra reservada `"this"`. Por lo tanto, la respuesta correcta es `A`: 
+Verdadero. El contexto de ejecución global es accesible en todo el código y 
+proporciona acceso al objeto global (como `window` en un navegador o `global` 
+en Node.js) y a la palabra reservada `"this"`.
+
+</div>
+
+<img src="./assets/images/25.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
