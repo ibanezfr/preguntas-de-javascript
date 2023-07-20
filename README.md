@@ -29,6 +29,7 @@
 24. [Diferencias en el manejo de claves entre objeto y conjuntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#24-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 25. [Sustitución de claves en objetos: un ejemplo de actualización de valores en duplicados](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#25-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 26. [El contexto de ejecución en JavaScript: Creación el objeto global y la palabra reservada "this"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#26-el-contexto-de-ejecuci%C3%B3n-de-javascript-crea-dos-cosas-el-objeto-global-y-la-palabra-reservada-this)
+27. ["La palabra reservada `continue` en JavaScript: Omitiendo iteraciones con condiciones específicas"]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1291,6 +1292,43 @@ en Node.js) y a la palabra reservada `"this"`.
 
 </div>
 
+</p></details>
+
+</div>
+
+---
+
+# 27. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+for(let i = 1; i < 5; i++){
+  if (i === 3) continue;
+  console.log(i);
+}
+```
+- A. `1` `2`
+- B. `1` `2` `3`
+- C. `1` `2` `4`
+- D. `1` `3` `4`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la C.
+
+<div align="left">
+
+La palabra reservada `continue` omite una iteración si una cierta condición, en 
+este caso `(i === 3)`, retorna `verdadero`.
+
+</div>
+
+<img src="./assets/images/27.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
 </p></details>
 
 </div>
