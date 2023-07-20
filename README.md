@@ -1298,7 +1298,7 @@ en Node.js) y a la palabra reservada `"this"`.
 
 ---
 
-# 27. ¿Qué devuelve esta función?
+# 27. ¿Qué imprime este bucle?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
