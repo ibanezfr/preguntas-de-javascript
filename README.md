@@ -30,7 +30,7 @@
 25. [Sustitución de claves en objetos: un ejemplo de actualización de valores en duplicados](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#25-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 26. [El contexto de ejecución en JavaScript: Creación el objeto global y la palabra reservada "this"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#26-el-contexto-de-ejecuci%C3%B3n-de-javascript-crea-dos-cosas-el-objeto-global-y-la-palabra-reservada-this)
 27. ["La palabra reservada `continue` en JavaScript: Omitiendo iteraciones con condiciones específicas"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-imprime-este-bucle)
-28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String]()
+28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
