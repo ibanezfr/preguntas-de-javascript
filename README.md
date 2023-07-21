@@ -1334,3 +1334,44 @@ este caso `(i === 3)`, retorna `verdadero`.
 </div>
 
 ---
+
+# 27. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+String.prototype.darleUnHeladoAFulano = () => {
+  return "¡Denle un helado a Fulano!"
+}
+const nombre = "Fulano";
+console.log(nombre.darleUnHeladoAFulano())
+```
+- A. `"¡Denle un helado a Fulano!"`
+- B. `TypeError: not a function`
+- C. `SyntaxError`
+- D. `undefined`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la C.
+
+<div align="left">
+
+`String` es un constructor que viene incorporado en JavaScript, al que podemos 
+añadir propiedades. En este caso concreto, añadimos un método a su prototipo.
+Las cadenas primitivas se convierten automáticamente en un objeto de cadena, 
+generado por la función de prototipo de cadena. Por lo tanto, todas las cadenas
+(objetos de cadenas) tienen acceso a ese método.
+
+</div>
+
+<img src="./assets/images/28.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
