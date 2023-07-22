@@ -31,6 +31,7 @@
 26. [El contexto de ejecución en JavaScript: Creación el objeto global y la palabra reservada "this"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#26-el-contexto-de-ejecuci%C3%B3n-de-javascript-crea-dos-cosas-el-objeto-global-y-la-palabra-reservada-this)
 27. ["La palabra reservada `continue` en JavaScript: Omitiendo iteraciones con condiciones específicas"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-imprime-este-bucle)
 28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
+29. [La conversión automática de claves en objetos y el misterio de '[object Object]']()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1336,7 +1337,7 @@ este caso `(i === 3)`, retorna `verdadero`.
 
 ---
 
-# 27. ¿Qué se imprime en la consola?
+# 28. ¿Qué se imprime en la consola?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
@@ -1364,6 +1365,57 @@ añadir propiedades. En este caso concreto, añadimos un método a su prototipo.
 Las cadenas primitivas se convierten automáticamente en un objeto de cadena, 
 generado por la función de prototipo de cadena. Por lo tanto, todas las cadenas
 (objetos de cadenas) tienen acceso a ese método.
+
+</div>
+
+<img src="./assets/images/28.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 29. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+const a = {};
+const b = { clave: 'b' };
+const c = { clave: 'c' };
+
+a[b] = 123;
+a[c] = 456;
+
+console.log(a[b]);
+```
+- A. `123`
+- B. `456`
+- C. `undefined`
+- D. `ReferenceError`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la B.
+
+<div align="left">
+
+Las claves de los objetos se convierten automáticamente en cadenas. Aquí estamos
+tratando de establecer un objeto como clave del objeto `'a'`,
+con el valor de `123`.
+
+Sin embargo, cuando convertimos un objeto a cadena, se convierte en 
+`"[object Object]"`. Así que lo que estamos haciendo aquí es lo siguiente:
+`a["[object Object]"] = 123`. Luego, intentamos hacer lo mismo nuevamente. 
+`'c'` es otro objeto que se convierte implícitamente en una cadena. Entonces, 
+`a["[object Object]"] = 456`.
+
+Luego, registramos en la consola a[b], que es en realidad a["[object Object]"]. 
+Acabamos de establecer ese valor en 456, por lo que devuelve 456.
 
 </div>
 
