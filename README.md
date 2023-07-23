@@ -1430,7 +1430,7 @@ Acabamos de establecer ese valor en 456, por lo que devuelve 456.
 
 ---
 
-# 29. ¿Qué se imprime en la consola?
+# 30. ¿Qué se imprime en la consola?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
