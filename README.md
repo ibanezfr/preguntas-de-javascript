@@ -32,6 +32,7 @@
 27. ["La palabra reservada `continue` en JavaScript: Omitiendo iteraciones con condiciones específicas"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-imprime-este-bucle)
 28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
 29. [La conversión automática de claves en objetos y el misterio de '[object Object]'](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#29-qu%C3%A9-se-imprime-en-la-consola)
+30. []()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1420,6 +1421,60 @@ Acabamos de establecer ese valor en 456, por lo que devuelve 456.
 </div>
 
 <img src="./assets/images/28.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 29. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+const foo = () => console.log("Primero");
+const bar = () => setTimeout(() => console.log("Segundo"));
+const baz = () => console.log("Tercero");
+
+bar();
+foo();
+baz();
+```
+- A. `Primero` `Segundo` `Tercero`
+- B. `Primero` `Tercero` `Segundo`
+- C. `Segundo` `Primero` `Tercero`
+- D. `Segundo` `Tercero` `Primero`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la B.
+
+<div align="left">
+
+A pesar de que invocamos la función setTimeout primero, su mensaje se registró 
+al final.
+
+Esto se debe a que en los navegadores no solo tenemos el motor de tiempo de 
+ejecución, sino también algo llamado WebAPI. El WebAPI nos proporciona la 
+función setTimeout para empezar, así como otras funcionalidades como el DOM.
+
+Después de que el callback de setTimeout se agrega al WebAPI, la propia función 
+setTimeout (pero no el callback) se saca de la pila de ejecución. 
+Ahora, se invoca foo, y se imprime "Primero". Luego foo se saca de la pila y 
+se invoca baz, imprimiendo "Tercero". baz se saca de la pila.
+
+Aquí es donde comienza a funcionar el bucle de eventos (event loop). El bucle de
+eventos revisa la pila de ejecución y la cola de tareas. Si la pila está vacía, 
+toma el primer elemento de la cola de tareas y lo coloca en la pila. Se invoca 
+bar, se imprime "Segundo" y luego se saca de la pila.
+
+</div>
+
+<img src="./assets/images/30.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="150"
      style="border: 1px solid black; text-align: center;">
