@@ -33,6 +33,7 @@
 28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
 29. [La conversión automática de claves en objetos y el misterio de '[object Object]'](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#29-qu%C3%A9-se-imprime-en-la-consola)
 30. [Event Loop: Función SetTimeout](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#30-qu%C3%A9-se-imprime-en-la-consola)
+31. [Valores falsos]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1451,7 +1452,7 @@ baz();
 
 <details><summary><b>RESPUESTA</b></summary> <p>
 
-## La correcta es la B.
+## La correcta es la `B`.
 
 <div align="left">
 
@@ -1471,6 +1472,53 @@ Aquí es donde comienza a funcionar el bucle de eventos (event loop). El bucle d
 eventos revisa la pila de ejecución y la cola de tareas. Si la pila está vacía, 
 toma el primer elemento de la cola de tareas y lo coloca en la pila. Se invoca 
 bar, se imprime "Segundo" y luego se saca de la pila.
+
+</div>
+
+<img src="./assets/images/30.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 30. ¿Cuál de estos valores de evalúa FALSE?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+0;
+new Number(0);
+("");
+(" ");
+new Boolean(false);
+undefined;
+```
+- A. `0`, `""`, `undefined`
+- B. `0`, `new Number(0)`, `""`, `new Boolean(false)`, `undefined`
+- C. `0`, `""`, `new Boolean(false)`, `undefined`
+- D. `Todas las de arriba`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+Los [valores falsos](https://shorturl.at/tyzSZ) son aquellos que se evalúan como 
+FALSE. 
+En JavaScript hay 6:
+- `undefined`
+- `null`
+- `NaN`
+- `0`
+- `""` (cadena vacía)
+- `false`
+
 
 </div>
 
