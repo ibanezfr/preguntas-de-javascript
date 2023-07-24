@@ -33,7 +33,7 @@
 28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
 29. [La conversión automática de claves en objetos y el misterio de '[object Object]'](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#29-qu%C3%A9-se-imprime-en-la-consola)
 30. [Event Loop: Función SetTimeout](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#30-qu%C3%A9-se-imprime-en-la-consola)
-31. [Valores falsos]()
+31. [Valores falsos](https://shorturl.at/irtG9)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
