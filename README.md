@@ -34,6 +34,7 @@
 29. [La conversión automática de claves en objetos y el misterio de '[object Object]'](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#29-qu%C3%A9-se-imprime-en-la-consola)
 30. [Event Loop: Función SetTimeout](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#30-qu%C3%A9-se-imprime-en-la-consola)
 31. [Valores falsos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#31-cu%C3%A1l-de-estos-valores-de-eval%C3%BAa-false)
+32. [Palabra reservada typeof](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#32-qu%C3%A9-se-imprime-en-la-consola)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
