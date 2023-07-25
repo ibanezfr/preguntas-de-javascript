@@ -1485,7 +1485,7 @@ bar, se imprime "Segundo" y luego se saca de la pila.
 
 ---
 
-# 30. ¿Cuál de estos valores de evalúa FALSE?
+# 31. ¿Cuál de estos valores de evalúa FALSE?
 ###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
 
 ```javascript
