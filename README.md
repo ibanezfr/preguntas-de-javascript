@@ -33,7 +33,7 @@
 28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
 29. [La conversión automática de claves en objetos y el misterio de '[object Object]'](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#29-qu%C3%A9-se-imprime-en-la-consola)
 30. [Event Loop: Función SetTimeout](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#30-qu%C3%A9-se-imprime-en-la-consola)
-31. [Valores falsos](https://shorturl.at/irtG9)
+31. [Valores falsos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#31-cu%C3%A1l-de-estos-valores-de-eval%C3%BAa-false)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1523,6 +1523,41 @@ En JavaScript hay 6:
 </div>
 
 <img src="./assets/images/30.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 32. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+console.log(typeof typeof 1);
+```
+- A. `"number"`
+- B. `"string"`
+- C. `"object"`
+- D. `"undefined"`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `B`.
+
+<div align="left">
+
+`typeof 1` devuelve `"number"` 
+y 
+`typeof "number"` devuelve `"string"`.
+
+</div>
+
+<img src="./assets/images/32.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="150"
      style="border: 1px solid black; text-align: center;">
