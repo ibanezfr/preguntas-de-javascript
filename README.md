@@ -1600,7 +1600,7 @@ ejecute el código (navegador, node, etc.).
 
 <img src="./assets/images/33.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="400" height="150"
+     width="400" height="120"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
