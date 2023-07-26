@@ -35,6 +35,7 @@
 30. [Event Loop: Función SetTimeout](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#30-qu%C3%A9-se-imprime-en-la-consola)
 31. [Valores falsos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#31-cu%C3%A1l-de-estos-valores-de-eval%C3%BAa-false)
 32. [Palabra reservada typeof](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#32-qu%C3%A9-se-imprime-en-la-consola)
+33. []()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1559,6 +1560,45 @@ y
 </div>
 
 <img src="./assets/images/32.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 33. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+const numeros = [1, 2, 3];
+numeros[10] = 11;
+console.log(numeros);
+```
+- A. `[1, 2, 3, 7 x null, 11]`
+- B. `[1, 2, 3, 11]`
+- C. `[1, 2, 3, 7 x empty, 11]`
+- D. `SyntaxError`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+Cuando queremos agregar un valor dentro de un arreglo, en una posición que 
+excede la longitud del mismo, JavaScript emplea algo llamado "ranuras vacías". 
+Estas posiciones vacías, en realidad tienen el valor de `undefined`.
+El modo en que se visualizan estas posiciones vacías varía según el dónde se 
+ejecute el código (navegador, node, etc.).
+
+</div>
+
+<img src="./assets/images/33.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="150"
      style="border: 1px solid black; text-align: center;">
