@@ -1,4 +1,8 @@
-# Preguntas de Javascript
+<div align="center">  
+
+# Preguntas de JavaScript
+
+</div>
 
 ##### [Crédito: Idea original](https://rb.gy/1xtk4)
 
