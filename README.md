@@ -21,7 +21,7 @@
    ](https://shorturl.at/aqC15)
 10. [Las funciones en JavaScript: objetos invocables](https://shorturl.at/dgw56)
 11. [Optimización de memoria en JavaScript mediante el uso de prototipos
-    ](https://shorturl.at/dgw56)
+    ](https://shorturl.at/cimR9)
 12. [Creación de instancias: Uso de 'new' vs. in 'new': Impacto en la asignación
     de propiedades](https://shorturl.at/desL5)
 13. [Fases de propagación de eventos en la programación de la interfaz de
