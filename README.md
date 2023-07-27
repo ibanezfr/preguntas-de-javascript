@@ -1,46 +1,71 @@
 # Preguntas de Javascript
 
-##### [Crédito: Idea original](https://github.com/lydiahallie/javascript-questions)
+##### [Crédito: Idea original](https://rb.gy/1xtk4)
 
 ## Índice
-1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de "hoisting" y "zona muerta temporal".](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#1-qu%C3%A9-devuelve-la-funci%C3%B3n-saluda)
-2. [Alcance de variables y setTimeout en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#2-qu%C3%A9-devuelve-esta-serie-de-bucles)
-3. [Funciones regulares y flecha con el uso del this en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#3-qu%C3%A9-imprimir%C3%ADan-estos-consolelog--)
-4. [Conversiones booleanas y evaluación de expresiones en JavaScript.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#4-qu%C3%A9-devolver%C3%ADa-el-siguiente-c%C3%B3digo)
-5. [Acceso a propiedades de objetos en JavaScript: Notación de corchetes y notación de puntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#5-cu%C3%A1l-de-%C3%A9stas-opciones-es-incorrecta)
-6. [Manejo de objetos por referencia en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#6-qu%C3%A9-devuelve-este-c%C3%B3digo)
-7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#7-qu%C3%A9-imprimir%C3%ADan-estos-consolelog-)
-8. [TypeError: Acceso incorrecto al método estático en una instancia específica](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#8-qu%C3%A9-devolver%C3%ADa-este-c%C3%B3digo)
-9. [Depuración de errores y el uso estricto en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#9-qu%C3%A9-imprimir%C3%ADa-este-consolelog-)
-10. [Las funciones en JavaScript: objetos invocables](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#10-qu%C3%A9-sucede-en-este-caso)
-11. [Optimización de memoria en JavaScript mediante el uso de prototipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#11-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-12. [Creación de instancias: Uso de 'new' vs. in 'new': Impacto en la asignación de propiedades](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#12-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-13. [Fases de propagación de eventos en la programación de la interfaz de usuario](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#13-cu%C3%A1les-son-las-3-fases-de-la-propagaci%C3%B3n-de-eventos)
-14. [Herencia de prototipos y acceso a métodos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#14-todos-los-objetos-tienen-un-prototipo)
-15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-16. [Operadores unarios de incremento y sus resultados. ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#16-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de las plantillas literales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#17-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-18. [Comparación de objetos en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#18-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-19. [El operador de propagación (spread operator) en JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-20. [La importancia de utilizar 'use strict' para evitar variables globales accidentales](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#20-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-21. [Evaluación de una cadena: el uso de eval()](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#21-cu%C3%A1l-es-el-valor-de-suma)
-22. [Persistencia de datos: Impacto al cerrar la pestaña o el navegador.](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#22-por-cu%C3%A1nto-tiempo-accesible-sabroso_secreto)
-23. [Diferencias de alcance entre `var`, `let` y `const` en JavaScript](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#23-cu%C3%A1l-es-el-valor-de-suma)
-24. [Diferencias en el manejo de claves entre objeto y conjuntos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#24-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-25. [Sustitución de claves en objetos: un ejemplo de actualización de valores en duplicados](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#25-qu%C3%A9-devuelve-esta-funci%C3%B3n)
-26. [El contexto de ejecución en JavaScript: Creación el objeto global y la palabra reservada "this"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#26-el-contexto-de-ejecuci%C3%B3n-de-javascript-crea-dos-cosas-el-objeto-global-y-la-palabra-reservada-this)
-27. ["La palabra reservada `continue` en JavaScript: Omitiendo iteraciones con condiciones específicas"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-imprime-este-bucle)
-28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor String](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#27-qu%C3%A9-se-imprime-en-la-consola)
-29. [La conversión automática de claves en objetos y el misterio de '[object Object]'](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#29-qu%C3%A9-se-imprime-en-la-consola)
-30. [Event Loop: Función SetTimeout](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#30-qu%C3%A9-se-imprime-en-la-consola)
-31. [Valores falsos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#31-cu%C3%A1l-de-estos-valores-de-eval%C3%BAa-false)
-32. [Palabra reservada typeof](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#32-qu%C3%A9-se-imprime-en-la-consola)
-33. [Explorando los Arreglos en JavaScript: Ranuras Vacías y Valores `undefined`](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#33-qu%C3%A9-se-imprime-en-la-consola)
-34. [Técnica de Reducción en JavaScript: Concatenando Arrays en un Solo Valor](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#34-qu%C3%A9-devuelve-esta-funci%C3%B3n)
+1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de
+   "hoisting" y "zona muerta temporal".](https://bit.ly/44HESnu)
+2. [Alcance de variables y setTimeout en JavaScript.](https://bit.ly/3rJQqIa)
+3. [Funciones regulares y flecha con el uso del this en JavaScript.
+   ](https://bit.ly/3KhodyP)
+4. [Conversiones booleanas y evaluación de expresiones en JavaScript.
+   ](https://bit.ly/3Kh0XRI)
+5. [Acceso a propiedades de objetos en JavaScript: Notación de corchetes y
+   notación de puntos](https://shorturl.at/sJOT8)
+6. [Manejo de objetos por referencia en JavaScript](https://bit.ly/3QeGtMY)
+7. [Comparación entre operadores == y === en JavaScript: Valor vs. Valor y Tipo
+   ](https://bit.ly/3q5jmd6)
+8. [TypeError: Acceso incorrecto al método estático en una instanciaespecífica
+   ](https://shorturl.at/tx369)
+9. [Depuración de errores y el uso estricto en JavaScript
+   ](https://shorturl.at/aqC15)
+10. [Las funciones en JavaScript: objetos invocables](https://shorturl.at/dgw56)
+11. [Optimización de memoria en JavaScript mediante el uso de prototipos
+    ](https://shorturl.at/dgw56)
+12. [Creación de instancias: Uso de 'new' vs. in 'new': Impacto en la asignación
+    de propiedades](https://shorturl.at/desL5)
+13. [Fases de propagación de eventos en la programación de la interfaz de
+    usuario](https://shorturl.at/quzR8)
+14. [Herencia de prototipos y acceso a métodos en JavaScript
+    ](https://shorturl.at/dimxW)
+15. [Tipado dinámico y coerción implícita de tipos](https://shorturl.at/jkpMO)
+16. [Operadores unarios de incremento y sus resultados.
+    ](https://shorturl.at/quzR8)
+17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de
+    las plantillas literales](https://shorturl.at/dimxW)
+18. [Comparación de objetos en JavaScript](https://bit.ly/43Jq2LF)
+19. [El operador de propagación (spread operator) en
+    JavaScript"](https://shorturl.at/jkpMO)
+20. [La importancia de utilizar 'use strict' para evitar variables globales
+    accidentales](https://shorturl.at/kmGIT)
+21. [Evaluación de una cadena: el uso de eval()](https://shorturl.at/ghmxY)
+22. [Persistencia de datos: Impacto al cerrar la pestaña o el navegador.
+    ](https://shorturl.at/dFHIY)
+23. [Diferencias de alcance entre `var`, `let` y `const` en JavaScript
+    ](https://rb.gy/5fpee)
+24. [Diferencias en el manejo de claves entre objeto y conjuntos
+    ](https://rb.gy/tygcp)
+25. [Sustitución de claves en objetos: un ejemplo de actualización de valores en
+    duplicados](https://shorturl.at/wDSUX)
+26. [El contexto de ejecución en JavaScript: Creación el objeto global y la
+    palabra reservada "this"](https://shorturl.at/xRTWX)
+27. ["La palabra reservada `continue` en JavaScript: Omitiendo iteraciones con
+    condiciones específicas"](https://shorturl.at/pEQRS)
+28. [Ampliando funcionalidades: Añadiendo un método al prototipo del constructor
+    String](https://rb.gy/zbj46)
+29. [La conversión automática de claves en objetos y el misterio de '[object
+    Object]'](https://shorturl.at/hvxQX)
+30. [Event Loop: Función SetTimeout](https://shorturl.at/wzBJ4)
+31. [Valores falsos](https://shorturl.at/sLTW9)
+32. [Palabra reservada typeof](https://shorturl.at/iopBW)
+33. [Explorando los Arreglos en JavaScript: Ranuras Vacías y Valores `undefined`
+    ](https://shorturl.at/kyKU1)
+34. [Técnica de Reducción en JavaScript: Concatenando Arrays en un Solo Valor
+    ](https://shorturl.at/gmsuE)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 <!-- El link del índice pensado para ser clickeado desde el navegador -->
 
 ```javascript
@@ -72,13 +97,14 @@ predeterminado `undefined`. Esto se conoce como
 elevación. En el ejemplo, la variable "nombre" se declara con `var`, por lo que 
 se eleva y se inicializa con el valor `undefined` antes de que se alcance la 
 línea de código donde se define.
-2. Sin embargo, las variables declaradas con `let` o `const` también se elevan, 
-pero no se inicializan. Éstas tienen una "[zona muerta temporal](https://wesbos.com/temporal-dead-zone)" 
-en la que no son accesibles antes de la línea de
-código en la que se declaran (se inicializan). Si intentamos acceder a una 
-variable `let` o `const` antes de su declaración, se lanzará un `ReferenceError`
-. En el ejemplo, la variable `edad` de declara con `let`, y como intentamos 
-acceder a ella antes de su declaración, se produce un `ReferenceError`.
+2. Sin embargo, las variables declaradas con `let` o `const` también se elevan,
+pero no se inicializan. Éstas tienen una "[zona muerta
+temporal](https://wesbos.com/temporal-dead-zone)" en la que no son accesibles
+antes de la línea de código en la que se declaran (se inicializan). Si
+intentamos acceder a una variable `let` o `const` antes de su declaración, se
+lanzará un `ReferenceError` . En el ejemplo, la variable `edad` de declara con
+`let`, y como intentamos acceder a ella antes de su declaración, se produce un
+`ReferenceError`.
 
 </div>
 
@@ -96,7 +122,7 @@ acceder a ella antes de su declaración, se produce un `ReferenceError`.
 ---
 
 # 2. ¿Qué devuelve esta serie de bucles?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 for (var i = 5; i < 8; i++){
@@ -120,10 +146,10 @@ for(let i = 5; i < 8; i++){
 
 <div align="left">
 
-En JavaScript, las funciones [`setTimeout`](https://developer.mozilla.org/es/docs/Web/API/setTimeout)
-se ejecutan de forma asíncrona. Esto significa que se colocan en la cola de 
-eventos y se ejecutan después de que se hayan completado todas las tareas 
-sincrónicas.
+En JavaScript, las funciones
+[`setTimeout`](https://developer.mozilla.org/es/docs/Web/API/setTimeout) se
+ejecutan de forma asíncrona. Esto significa que se colocan en la cola de eventos
+y se ejecutan después de que se hayan completado todas las tareas sincrónicas.
 
 En el primer bucle, se utiliza la palabra reservada `var` para declarar la 
 variable `i`. Al usar `var`, el alcance de la variable se vuelve global. Esto 
@@ -177,7 +203,7 @@ correspondiente a su propia iteración.
 ---
 
 # 3. ¿Qué imprimirían estos console.log( ) ?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const forma = {
@@ -230,7 +256,7 @@ se imprimirá NaN.
 --- 
 
 # 4. ¿Qué devolvería el siguiente código?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
   +true;
@@ -267,7 +293,7 @@ el valor booleano false.
 ---
 
 # 5. ¿Cuál de éstas opciones es incorrecta?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
   const pajarito = {
@@ -290,27 +316,28 @@ el valor booleano false.
 
 <div align="left">
 
-En JavaScript, todas las claves de un objeto se interpretan como [`cadenas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/String)
-, a menos que sean de tipo "símbolo". Aunque no las escribamos explícitamente 
-como cadenas, se comportan internamente como cadenas.
+En JavaScript, todas las claves de un objeto se interpretan como
+[`cadenas`](https://shorturl.at/csLO4) , a menos que sean de tipo "símbolo".
+Aunque no las escribamos explícitamente como cadenas, se comportan internamente
+como cadenas.
 
-Cuando utilizamos la [`notación de corchetes`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Property_accessors#notaci%C3%B3n_por_corchetes)
-para acceder a las propiedades de un objeto, JavaScript interpreta la 
-declaración. Comienza evaluando lo que está dentro de los corchetes, desde el 
-corchete de apertura `"["` hasta el corchete de cierre `"]"`. Solo de esta manera se
+Cuando utilizamos la [`notación de corchetes`](https://shorturl.at/ikuR1) para
+acceder a las propiedades de un objeto, JavaScript interpreta la declaración.
+Comienza evaluando lo que está dentro de los corchetes, desde el corchete de
+apertura `"["` hasta el corchete de cierre `"]"`. Solo de esta manera se
 evaluará correctamente la expersión.
 
 Por ejemplo, en el caso de `raton[pajarito.tamanio]`, primero se evalúa 
 `pajarito.tamanio`, que tiene un valor de "pequenio". Luego, JavaScript 
 interpreta `raton["pequenio"]`, lo cual devuelve `true`.
 
-Sin embargo, con la [`notación de puntos`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Property_accessors#notaci%C3%B3n_por_punto),
-esto no ocurre de la misma manera. Si intentamos acceder a una propiedad 
-utilizando la notación de puntos, como `raton.pajarito.tamanio`, JavaScript 
-busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como 
-`raton.pajarito` es `undefined`, en realidad estamos intentando acceder a 
-`undefined.tamanio`. Esto no es válido y generará un error similar a 
-"Cannot read property `'tamanio'` of undefined".
+Sin embargo, con la [`notación de puntos`](https://shorturl.at/bxCEX), esto no
+ocurre de la misma manera. Si intentamos acceder a una propiedad utilizando la
+notación de puntos, como `raton.pajarito.tamanio`, JavaScript busca una
+propiedad llamada `"pajarito"` dentro del objeto `raton`. Como `raton.pajarito`
+es `undefined`, en realidad estamos intentando acceder a `undefined.tamanio`.
+Esto no es válido y generará un error similar a "Cannot read property
+`'tamanio'` of undefined".
 
 </div>
 
@@ -325,7 +352,7 @@ busca una propiedad llamada `"pajarito"` dentro del objeto `raton`. Como
 ---
 
 # 6. ¿Qué devuelve este código?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
   let a = { saludo: "¿Qué tal?" };
@@ -375,7 +402,7 @@ misma referencia se verán afectados por ese cambio.
 ---
 
 # 7. ¿Qué imprimirían estos console.log( )?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
   let a = 3;
@@ -424,7 +451,7 @@ como el tipo de dato. Dado que "`new Number( )`" no es un número, sino un objet
 ---
 
 # 8. ¿Qué devolvería este código?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
   class camaleon  {
@@ -471,7 +498,7 @@ Esto causa un TypeError.
 ---
 
 # 9. ¿Qué imprimiría este console.log( )?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
  let saludo;
@@ -495,10 +522,9 @@ vacío en el objeto global. Cuando escribimos erróneamente `saludo` como `aslud
 , el intérprete de JavaScript lo interpreta como `global.asludo = {}`
 (o window.asludo = {} en un navegador).
 
-Para evitar este tipo de errores, podemos utilizar el `"modo estricto"` 
-(["use strict"](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Modo_estricto)).
-Esto garantiza que una variable se declare antes de asignarle 
-cualquier valor.
+Para evitar este tipo de errores, podemos utilizar el `"modo estricto"` (["use
+strict"](https://shorturl.at/hqP03)). Esto garantiza que una variable se declare
+antes de asignarle cualquier valor.
 
 </div>
 
@@ -517,7 +543,7 @@ cualquier valor.
 ---
 
 # 10. ¿Qué sucede en este caso?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
  function ladrar( ){
@@ -559,7 +585,7 @@ esas propiedades es la capacidad de ser invocada.
 ---
 
 # 11. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function Persona(nombre, apellido){
@@ -624,7 +650,7 @@ de espacio en memoria.
 ---
 
 # 12. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function Persona(nombre, apellido){
@@ -673,7 +699,7 @@ global en lugar de a un nuevo objeto.
 ---
 
 # 13. ¿Cuáles son las 3 fases de la propagación de eventos?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 
 - A: `Target` > `Capturing` > `Bubbling`
@@ -712,10 +738,9 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 
 </div>
 
-<img src="https://camo.githubusercontent.com/5fd2d347d044150e4ae35091622f0628f0eb7893966f03c8955ca271f3153e47/68747470733a2f2f692e696d6775722e636f6d2f4e31386f5267642e706e67"
-     alt="Captura del output en la terminal del ejercicio"
-     width="350" height="200"
-     style="border: 1px solid black; text-align: center;">
+<img src="https://rb.gy/a3d6m" alt="Captura del output en la terminal del
+     ejercicio" width="350" height="200" style="border: 1px solid black;
+     text-align: center;">
 
 </p></details>
  </div>
@@ -723,7 +748,7 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 ---
 
 # 14. Todos los objetos tienen un prototipo.
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 
 - A: `Verdadero`
@@ -736,10 +761,11 @@ de Bubbling para capturar o manejar eventos en elementos específicos del DOM.
 
 <div align="left">
 
-En JavaScript, todos los objetos tienen un prototipo, excepto el [objeto base](https://stackoverflow.com/questions/56659303/what-is-base-object-in-javascript).
-El objeto base es el punto final de la cadena de prototipos y no tiene ningún 
-prototipo al que acceder. Esta es la razón por la que el objeto base no tiene 
-métodos o propiedades específicas disponibles para su uso.
+En JavaScript, todos los objetos tienen un prototipo, excepto el [objeto base
+](https://rebrand.ly/19h7y4k). El objeto base es el punto final de la cadena de
+prototipos y no tiene ningún prototipo al que acceder. Esta es la razón por la
+que el objeto base no tiene métodos o propiedades específicas disponibles para
+su uso.
 
 Sin embargo, cuando creamos objetos a partir de constructores o clases, esos 
 objetos heredan el prototipo de su constructor o clase. El prototipo actúa como 
@@ -771,7 +797,7 @@ prototipos de los objetos.
 ---
 
 # 15. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function sumar(a,b){
@@ -797,7 +823,8 @@ En JavaScript, no es necesario declarar explícitamente el tipo de una variable,
 ya que se determina automáticamente durante la ejecución del programa. Esto se 
 debe a que JavaScript es un lenguaje de tipado dinámico o de tipado débil.
 
-La [coerción implícita de tipos](https://developer.mozilla.org/es/docs/Glossary/Type_coercion)
+La [coerción implícita de
+tipos](https://developer.mozilla.org/es/docs/Glossary/Type_coercion)
 es un concepto en JavaScript donde los valores pueden convertirse 
 automáticamente en otro tipo sin necesidad de ser declarado. 
 Esto permite que los valores se ajusten y se utilicen de manera flexible en 
@@ -827,7 +854,7 @@ cuidado al realizar operaciones para evitar resultados inesperados.
 ---
 
 # 16. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 let numero = 0;
@@ -870,7 +897,7 @@ Si lo aplicamos `prefix`...(++algo)
 ---
 
 # 17. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function obtenerInfoPersona(uno, dos, tres){
@@ -895,11 +922,11 @@ obtenerInfoPersona`${persona} tiene ${edad} años`
 
 <div align="left">
 
-Las [`plantillas etiquetadas`](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals#plantillas_etiquetadas)
-son una funcionalidad avanzada de las `plantillas literales` en JavaScript. 
-Al utilizar las plantillas etiquetadas, podemos modificar la salida de las 
-plantillas utilizando una función personalizada (la `función etiquetada`).
-[Más info](https://codeburst.io/javascript-template-literals-tag-functions-for-beginners-758a041160e1)
+Las [`plantillas etiquetadas`](https://rebrand.ly/3urlx7d) son una funcionalidad
+avanzada de las `plantillas literales` en JavaScript. Al utilizar las plantillas
+etiquetadas, podemos modificar la salida de las plantillas utilizando una
+función personalizada (la `función etiquetada`). [Más
+info](https://rebrand.ly/jcz707n)
 
 Cuando se utiliza una `plantilla etiquetada`, la llamada se convierte en una 
 invocación de función, donde la plantilla literal se pasa como argumento. El 
@@ -931,7 +958,7 @@ en JavaScript.
 ---
 
 # 18. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function verificarEdad(data){
@@ -989,7 +1016,7 @@ y se imprime `"Hmm..Sunpong que no tienes edad"`.
 ---
 
 # 19. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function obtenLaEdad(...args){
@@ -1010,10 +1037,11 @@ obtenLaEdad(27);
 
 <div align="left">
 
-El [operador de propagación (spread operator) (...)](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-se utiliza para convertir los argumentos de una función en un array.
-Al usar el operador spread, los argumentos se colocan dentro de corchetes [], 
-lo que crea un nuevo array con esos elementos.
+El [operador de propagación (spread operator)
+(...)](https://rebrand.ly/u3lsrme)
+se utiliza para convertir los argumentos de una función en un array. Al usar el
+operador spread, los argumentos se colocan dentro de corchetes [], lo que crea
+un nuevo array con esos elementos.
 
 Dado que un array es un tipo de objeto en JavaScript, el operador typeof 
 devuelve `"object"` cuando se aplica a un array. Esto se debe a que, desde el 
@@ -1038,7 +1066,7 @@ es considerado un tipo especial de objeto en JavaScript.
 ---
 
 # 20. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 function obtenerEdad(){
@@ -1081,7 +1109,7 @@ correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
 ---
 
 # 21. ¿Cuál es el valor de `suma`?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const suma = eval("10*10+5");
@@ -1120,7 +1148,7 @@ y devuelve el resultado numérico.
 ---
 
 # 22. ¿Por cuánto tiempo accesible `sabroso_secreto`?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 sessionStorage.setItem("sabroso_secreto", 123);
@@ -1153,7 +1181,7 @@ que se invoque `localStorage.clear()`.
 ---
 
 # 23. ¿Qué imprime `console.log( )`?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 var numero = 5;
@@ -1191,7 +1219,7 @@ No sucede lo mismo con `let` y `const` porque tienen un alcance de bloque.
 ---
 
 # 24. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const objeto = {
@@ -1240,7 +1268,7 @@ en nuestro set, `set.has("1")` devuelve `falso`. Tiene el tipo numérico
 ---
 
 # 25. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const objeto = { a: "uno", b: "dos", a: "tres" };
@@ -1277,7 +1305,7 @@ actualizado al último especeficado.
 
 # 26. El contexto de ejecución de JavaScript crea dos cosas: el objeto global y la palabra reservada `"this"`.
 
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 - A. `Verdadero` 
 - B. `Falso`
@@ -1306,7 +1334,7 @@ en Node.js) y a la palabra reservada `"this"`.
 ---
 
 # 27. ¿Qué imprime este bucle?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 for(let i = 1; i < 5; i++){
@@ -1343,7 +1371,7 @@ este caso `(i === 3)`, retorna `verdadero`.
 ---
 
 # 28. ¿Qué se imprime en la consola?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 String.prototype.darleUnHeladoAFulano = () => {
@@ -1384,7 +1412,7 @@ generado por la función de prototipo de cadena. Por lo tanto, todas las cadenas
 ---
 
 # 29. ¿Qué se imprime en la consola?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const a = {};
@@ -1435,7 +1463,7 @@ Acabamos de establecer ese valor en 456, por lo que devuelve 456.
 ---
 
 # 30. ¿Qué se imprime en la consola?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const foo = () => console.log("Primero");
@@ -1489,7 +1517,7 @@ bar, se imprime "Segundo" y luego se saca de la pila.
 ---
 
 # 31. ¿Cuál de estos valores de evalúa FALSE?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 0;
@@ -1536,7 +1564,7 @@ En JavaScript hay 6:
 ---
 
 # 32. ¿Qué se imprime en la consola?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 console.log(typeof typeof 1);
@@ -1571,7 +1599,7 @@ y
 ---
 
 # 33. ¿Qué se imprime en la consola?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 const numeros = [1, 2, 3];
@@ -1610,7 +1638,7 @@ ejecute el código (navegador, node, etc.).
 ---
 
 # 34. ¿Qué devuelve esta función?
-###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
 [[0, 1], [2, 3]].reduce(
@@ -1633,18 +1661,19 @@ ejecute el código (navegador, node, etc.).
 
 <div align="left">
 
-Esta es una operación de reducción utilizando el método `reduce()` en un array de 
-arrays. La función `reduce()` se utiliza para combinar los elementos de un array 
-en un único valor, aplicando una función acumuladora de izquierda a derecha.
+Esta es una operación de reducción utilizando el método `reduce()` en un array
+de arrays. La función `reduce()` se utiliza para combinar los elementos de un
+array en un único valor, aplicando una función acumuladora de izquierda a
+derecha.
 
 La operación de reducción se realiza de la siguiente manera:
 
-El valor inicial `(seed)` para la acumulación es `[1, 2]`.
-En cada iteración, la función acumuladora toma dos argumentos: el acumulador 
-`(acc)` y el valor actual `(cur)`.La función acumuladora concatena los elementos del
-array actual `(cur)` al acumulador `(acc)`. Al finalizar las iteraciones, el 
-resultado final es el acumulador modificado con los elementos concatenados.
-Aquí está la explicación paso a paso:
+El valor inicial `(seed)` para la acumulación es `[1, 2]`. En cada iteración, la
+función acumuladora toma dos argumentos: el acumulador `(acc)` y el valor actual
+`(cur)`.La función acumuladora concatena los elementos del array actual `(cur)`
+al acumulador `(acc)`. Al finalizar las iteraciones, el resultado final es el
+acumulador modificado con los elementos concatenados. Aquí está la explicación
+paso a paso:
 
 *Paso 1:*
 
