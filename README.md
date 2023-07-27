@@ -36,6 +36,7 @@
 31. [Valores falsos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#31-cu%C3%A1l-de-estos-valores-de-eval%C3%BAa-false)
 32. [Palabra reservada typeof](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#32-qu%C3%A9-se-imprime-en-la-consola)
 33. [Explorando los Arreglos en JavaScript: Ranuras Vacías y Valores `undefined`](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#33-qu%C3%A9-se-imprime-en-la-consola)
+34. [Técnica de Reducción en JavaScript: Concatenando Arrays en un Solo Valor]()
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
@@ -1599,6 +1600,68 @@ ejecute el código (navegador, node, etc.).
 </div>
 
 <img src="./assets/images/33.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="400" height="120"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 34. ¿Qué devuelve esta función?
+###### [ÍNDICE](https://github.com/francoibanezweb/preguntas-de-javascript/blob/main/README.md#%C3%ADndice)
+
+```javascript
+[[0, 1], [2, 3]].reduce(
+  (acc, cur) => {
+    return acc.concat(cur);
+  },
+  [1, 2]
+);
+```
+- A. `[0, 1, 2, 3, 1, 2]`
+- B. `[6, 1, 2]`
+- C. `[1, 2, 0, 1, 2, 3]`
+- D. `[1, 2, 6]`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+Esta es una operación de reducción utilizando el método `reduce()` en un array de 
+arrays. La función `reduce()` se utiliza para combinar los elementos de un array 
+en un único valor, aplicando una función acumuladora de izquierda a derecha.
+
+La operación de reducción se realiza de la siguiente manera:
+
+El valor inicial `(seed)` para la acumulación es `[1, 2]`.
+En cada iteración, la función acumuladora toma dos argumentos: el acumulador 
+`(acc)` y el valor actual `(cur)`.La función acumuladora concatena los elementos del
+array actual `(cur)` al acumulador `(acc)`. Al finalizar las iteraciones, el 
+resultado final es el acumulador modificado con los elementos concatenados.
+Aquí está la explicación paso a paso:
+
+*Paso 1:*
+
+acc = `[1, 2]`
+cur = `[0, 1]`
+Resultado de concatenación: `[1, 2, 0, 1]`
+
+*Paso 2:*
+
+acc = `[1, 2, 0, 1]`
+cur = `[2, 3]`
+Resultado de concatenación: `[1, 2, 0, 1, 2, 3]`
+El resultado final de la operación `reduce()` es `[1, 2, 0, 1, 2, 3]`.
+
+</div>
+
+<img src="./assets/images/34.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="400" height="120"
      style="border: 1px solid black; text-align: center;">
