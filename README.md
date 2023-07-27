@@ -23,19 +23,19 @@
 11. [Optimización de memoria en JavaScript mediante el uso de prototipos
     ](https://shorturl.at/cimR9)
 12. [Creación de instancias: Uso de 'new' vs. in 'new': Impacto en la asignación
-    de propiedades](https://shorturl.at/desL5)
+    de propiedades](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#12-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 13. [Fases de propagación de eventos en la programación de la interfaz de
-    usuario](https://shorturl.at/quzR8)
+    usuario](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#13-cu%C3%A1les-son-las-3-fases-de-la-propagaci%C3%B3n-de-eventos)
 14. [Herencia de prototipos y acceso a métodos en JavaScript
-    ](https://shorturl.at/dimxW)
-15. [Tipado dinámico y coerción implícita de tipos](https://shorturl.at/jkpMO)
+    ](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#14-todos-los-objetos-tienen-un-prototipo)
+15. [Tipado dinámico y coerción implícita de tipos](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#15-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 16. [Operadores unarios de incremento y sus resultados.
     ](https://shorturl.at/quzR8)
 17. [Plantillas etiquetadas en JavaScript: Personaliza y modifica las salidas de
     las plantillas literales](https://shorturl.at/dimxW)
 18. [Comparación de objetos en JavaScript](https://bit.ly/43Jq2LF)
 19. [El operador de propagación (spread operator) en
-    JavaScript"](https://shorturl.at/jkpMO)
+    JavaScript"](https://github.com/francoibanezweb/preguntas-de-javascript/tree/main#19-qu%C3%A9-devuelve-esta-funci%C3%B3n)
 20. [La importancia de utilizar 'use strict' para evitar variables globales
     accidentales](https://shorturl.at/kmGIT)
 21. [Evaluación de una cadena: el uso de eval()](https://shorturl.at/ghmxY)
