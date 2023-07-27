@@ -4,7 +4,7 @@
 
 ## Índice
 1. [Comportamiento de variables `var` y `let` en JavaScript: Ejemplo de
-   "hoisting" y "zona muerta temporal".](https://bit.ly/44HESnu)
+   "hoisting" y "zona muerta temporal".](https://shorturl.at/inFPX)
 2. [Alcance de variables y setTimeout en JavaScript.](https://bit.ly/3rJQqIa)
 3. [Funciones regulares y flecha con el uso del this en JavaScript.
    ](https://bit.ly/3KhodyP)
