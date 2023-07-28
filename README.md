@@ -66,6 +66,7 @@
     ](https://shorturl.at/kyKU1)
 34. [Técnica de Reducción en JavaScript: Concatenando Arrays en un Solo Valor
     ](https://shorturl.at/gmsuE)
+35. [Lógica de Negación y Valores Booleanos](https://shorturl.at/bepT2)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
