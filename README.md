@@ -1703,3 +1703,42 @@ El resultado final de la operación `reduce()` es `[1, 2, 0, 1, 2, 3]`.
 </div>
 
 ---
+
+# 35. ¿A valores booleanos se resuelven?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+!!null;
+!!"";
+!!1;
+```
+- A. `false` `true` `false`
+- B. `false` `false` `true`
+- C. `false` `true` `true`
+- D. `true` `true` `false`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `B`.
+
+<div align="left">
+
+`null` es falso. `! null` devuelve `true`. `! true` devuelve `false`.
+
+`""` es false. `! ""` devuelve `true`. `! ""` devuelve `false`.
+
+`1` es verdadero. `! 1` devuelve `false`. `! false` devuelve `true`.
+
+</div>
+
+<img src="./assets/images/35.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="220" height="260"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
