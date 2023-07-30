@@ -1743,3 +1743,39 @@ El resultado final de la operación `reduce()` es `[1, 2, 0, 1, 2, 3]`.
 </div>
 
 ---
+
+# 36. ¿A qué valores booleanos se resuelven?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+[..."Franco"];
+```
+- A. `["F", "r", "a", "n", "c", "o"]`
+- B. `"Franco"`
+- C. `[[],"Franco"]`
+- D. `[["F", "r", "a", "n", "c", "o"]]`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+Una cadena es un elemento iterable. La [`sintaxis extendida o spread sintax`
+](https://shorturl.at/rDES6)
+permite a un elemento iterable ser expandido en lugares donde cero o más
+elementos (para [`Array literales`](https://shorturl.at/jpCSZ)) son esperados.
+
+</div>
+
+<img src="./assets/images/36.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
