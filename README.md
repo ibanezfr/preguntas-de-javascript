@@ -1745,7 +1745,7 @@ El resultado final de la operación `reduce()` es `[1, 2, 0, 1, 2, 3]`.
 
 ---
 
-# 36. ¿A qué valores booleanos se resuelven?
+# 36. ¿Qué devuelve el siguiente código?
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
