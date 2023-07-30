@@ -67,7 +67,7 @@
 34. [Técnica de Reducción en JavaScript: Concatenando Arrays en un Solo Valor
     ](https://shorturl.at/gmsuE)
 35. [Lógica de Negación y Valores Booleanos](https://shorturl.at/adrBQ)
-36. [Sintaxis Extendida o Spread Syntax]()
+36. [Sintaxis Extendida o Spread Syntax](https://shorturl.at/BLTX6)
 
 ---
 # 1. ¿Qué devuelve la función saluda? 
