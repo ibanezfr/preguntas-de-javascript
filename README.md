@@ -68,8 +68,11 @@
     ](https://shorturl.at/gmsuE)
 35. [Lógica de Negación y Valores Booleanos](https://shorturl.at/adrBQ)
 36. [Sintaxis Extendida o Spread Syntax](https://shorturl.at/BLTX6)
+37. []()
 
 ---
+
+<!-- 1 a 10 -->
 # 1. ¿Qué devuelve la función saluda? 
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 <!-- El link del índice pensado para ser clickeado desde el navegador -->
@@ -324,7 +327,7 @@ el valor booleano false.
 
 En JavaScript, todas las claves de un objeto se interpretan como
 [`cadenas`](https://shorturl.at/csLO4) , a menos que sean de tipo "símbolo".
-Aunque no las escribamos explícitamente como cadenas, se comportan internamente
+Aunque no las escribamos explícitamente como cadenas, se comportan internombrente
 como cadenas.
 
 Cuando utilizamos la [`notación de corchetes`](https://shorturl.at/ikuR1) para
@@ -589,7 +592,7 @@ esas propiedades es la capacidad de ser invocada.
 </div>
 
 ---
-
+<!-- 10 a 20 -->
 # 11. ¿Qué devuelve esta función?
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 
@@ -1113,7 +1116,7 @@ correctamente, ya que la propiedad `edad` se habría agregado al objeto global.
 </div>
 
 ---
-
+<!-- 21 a 30 -->
 # 21. ¿Cuál es el valor de `suma`?
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 
@@ -1768,6 +1771,66 @@ Una cadena es un elemento iterable. La [`sintaxis extendida o spread sintax`
 ](https://shorturl.at/rDES6)
 permite a un elemento iterable ser expandido en lugares donde cero o más
 elementos (para [`Array literales`](https://shorturl.at/jpCSZ)) son esperados.
+
+</div>
+
+<img src="./assets/images/36.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 37. ¿Qué devuelve el siguiente código?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+let persona = {nombre: "Franco"}
+const miembros = [persona]
+persona = null;
+
+console.log(miembros)
+```
+- A. `null`
+- B. `[null]`
+- C. `[{nombre: "Franco"}]`
+- D. `[{}]`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+Primero, creamos una variable llamada `"persona"` y le asignamos un objeto con
+una propiedad "`nombre`".
+
+Luego, declaramos una variable llamada `"miembros"` y la inicializamos como un
+array. Asignamos el primer elemento de ese array con el valor de la variable
+`"persona"`.
+
+Es importante destacar que en JavaScript, los objetos se pasan por referencia,
+lo que significa que cuando asignamos un objeto a otra variable, ambas variables
+apuntan al mismo objeto en memoria. Al hacer esto, no se crea una copia
+independiente del objeto, sino que se copia la referencia a ese objeto.
+
+A continuación, establecemos que la variable `"persona"` sea igual a "null".
+Esto solo afecta a la variable `"persona"`, pero no altera el primer elemento
+del array `"miembros"`. Esto se debe a que el primer elemento del array tiene
+una referencia independiente (copiada) al objeto original. Por lo tanto, aunque
+`"persona"` se haya establecido como "null", el primer elemento en `"miembros"`
+sigue manteniendo su referencia hacia el objeto original.
+
+En resumen, la modificación de la variable `"persona"` no afecta al primer
+elemento del array "`miembros`", ya que este último mantiene su referencia al
+objeto original. Cuando mostramos el contenido del array "`miembros`" por
+consola, el primer elemento aún contiene el valor del objeto, el cual se
+mostrará en la consola.
 
 </div>
 
