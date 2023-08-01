@@ -68,7 +68,8 @@
     ](https://shorturl.at/gmsuE)
 35. [Lógica de Negación y Valores Booleanos](https://shorturl.at/adrBQ)
 36. [Sintaxis Extendida o Spread Syntax](https://shorturl.at/BLTX6)
-37. []()
+37. [Interacción por referencia en JavaScript: Cómo afecta a los objetos dentro
+    de un array](https://shorturl.at/dlTV0)
 
 ---
 
