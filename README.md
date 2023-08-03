@@ -70,6 +70,7 @@
 36. [Sintaxis Extendida o Spread Syntax](https://shorturl.at/BLTX6)
 37. [Interacción por referencia en JavaScript: Cómo afecta a los objetos dentro
     de un array](https://shorturl.at/dlTV0)
+38. []()
 
 ---
 
@@ -1838,6 +1839,54 @@ mostrará en la consola.
 <img src="./assets/images/36.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 38. ¿Cuál es el resultado?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+
+console.log(5 + 7 + "10");
+
+```
+- A. `"5710"`
+- B. `"1210"`
+- C. `22`
+- D. `"22"`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `B`.
+
+<div align="left">
+
+La asociatividad de operadores determina el orden en el que el compilador evalúa
+las expresiones que contienen operadores. Este orden puede ser de izquierda a 
+derecha o de derecha a izquierda, dependiendo de la configuración de los 
+operadores y su precedencia.
+
+En nuestro caso, solo contamos con un tipo de operador, que es la suma 
+representada por el símbolo "+". Para la suma, la asociatividad es de 
+izquierda a derecha, lo que significa que se evalúan primero los operandos 
+situados más a la izquierda y luego los de la derecha.
+
+`5 + 7` se evalúa primero, dando el número `12`.
+
+`12 + "10"` da `"1210"` por la coerción. JavaScript convierte el número `12` a 
+string.
+
+</div>
+
+<img src="./assets/images/38.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="140"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
