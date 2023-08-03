@@ -70,7 +70,7 @@
 36. [Sintaxis Extendida o Spread Syntax](https://shorturl.at/BLTX6)
 37. [Interacción por referencia en JavaScript: Cómo afecta a los objetos dentro
     de un array](https://shorturl.at/dlTV0)
-38. []()
+38. [Asociatividad de operadores](https://shorturl.at/abES7)
 
 ---
 
