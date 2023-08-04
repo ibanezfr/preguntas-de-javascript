@@ -71,6 +71,7 @@
 37. [Interacción por referencia en JavaScript: Cómo afecta a los objetos dentro
     de un array](https://shorturl.at/dlTV0)
 38. [Asociatividad de operadores](https://shorturl.at/abES7)
+39. [El método parseInt()]()
 
 ---
 
@@ -1885,6 +1886,47 @@ string.
 </div>
 
 <img src="./assets/images/38.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="140"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 39. ¿Cuál es el valor de `numero`?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+
+const numero = parseInt("4*2", 10);
+
+```
+- A. `8`
+- B. `"8"`
+- C. `4`
+- D. `NaN`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+El método `parseInt` recibe dos argumentos, el segundo corresponde a la base a 
+la cual queremos transformar el primer argumento, si los caracteres del string 
+son válidos. Una vez encuetra un caracter que no es un número válido en la base 
+seleccionada, deja de recorrer el string e ignora los siguientes caracteres.
+
+`*` no es un número válido. Solo convierte "4" el decimal `4`. Por eso la 
+variable `numero` tiene el valor `4`.
+
+</div>
+
+<img src="./assets/images/39.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="140"
      style="border: 1px solid black; text-align: center;">
