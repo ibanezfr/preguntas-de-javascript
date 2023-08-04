@@ -71,7 +71,7 @@
 37. [Interacción por referencia en JavaScript: Cómo afecta a los objetos dentro
     de un array](https://shorturl.at/dlTV0)
 38. [Asociatividad de operadores](https://shorturl.at/abES7)
-39. [El método parseInt()]()
+39. [El método parseInt()](https://shorturl.at/alqJQ)
 
 ---
 
