@@ -72,6 +72,7 @@
     de un array](https://shorturl.at/dlTV0)
 38. [Asociatividad de operadores](https://shorturl.at/abES7)
 39. [El método parseInt()](https://shorturl.at/alqJQ)
+40. [JSON.stringify: Serialización de Objetos en Formato JSON]()
 
 ---
 
@@ -1927,6 +1928,65 @@ variable `numero` tiene el valor `4`.
 </div>
 
 <img src="./assets/images/39.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="140"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+# 40. ¿Qué queda guardado en la variable `data`?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+
+const settings = {
+     username: "paco82",
+     level: 59,
+     health: 85
+};
+
+const data = JSON.stringify(settings, ["level", "health"]);
+console.log(data);
+
+```
+- A. `"{"level":59, "health":85}"`
+- B. `"{"username": "paco82"}"`
+- C. `"["level", "health"]"`
+- D. `"{"username":"paco82", "level":59, "health":85}"`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+El segundo argumento de JSON.stringify es el reemplazador (replacer). El 
+reemplazador puede ser una función o un arreglo, y te permite tener control 
+sobre qué propiedades se convertirán en cadenas de texto y cómo se realizará 
+dicha conversión.
+
+Si utilizas un arreglo como reemplazador, solo las propiedades cuyos nombres 
+estén incluidos en el arreglo serán agregadas al string JSON resultante. En 
+este caso, únicamente las propiedades con nombres "level" y "health" serán 
+incluidas, mientras que la propiedad "username" será excluida. Por lo tanto, la 
+variable 'data' quedaría como sigue: `{"level": 59, "health": 85}`.
+
+Por otro lado, si optas por utilizar una función como reemplazador, esta será 
+llamada por cada propiedad del objeto mientras se convierte a una cadena de 
+texto. El valor retornado por esta función será el valor que tomará la propiedad
+cuando sea añadida al string JSON. Si la función devuelve undefined, la 
+propiedad será excluida del string JSON.
+
+Es importante tener en cuenta estas opciones al utilizar JSON.stringify para 
+personalizar la serialización de objetos en formato JSON.
+
+</div>
+
+<img src="./assets/images/40.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="140"
      style="border: 1px solid black; text-align: center;">
