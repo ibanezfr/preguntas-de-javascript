@@ -72,7 +72,8 @@
     de un array](https://shorturl.at/dlTV0)
 38. [Asociatividad de operadores](https://shorturl.at/abES7)
 39. [El método parseInt()](https://shorturl.at/alqJQ)
-40. [JSON.stringify: Serialización de Objetos en Formato JSON]()
+40. [JSON.stringify: Serialización de Objetos en Formato JSON
+](https://shorturl.at/jop05)
 
 ---
 
