@@ -74,6 +74,8 @@
 39. [El método parseInt()](https://shorturl.at/alqJQ)
 40. [JSON.stringify: Serialización de Objetos en Formato JSON
 ](https://shorturl.at/jop05)
+42. [Importaciones y Modificaciones de Variables en Módulos JavaScript
+]()
 
 ---
 
@@ -1994,5 +1996,64 @@ personalizar la serialización de objetos en formato JSON.
 </p></details>
 
 </div>
+
+---
+
+---
+# 41. ¿Qué sucede en este caso?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+// contador.js
+let contador = 10;
+export default contador;
+
+// index.js
+import miContador from "./contador.js";
+
+miContador += 1;
+
+console.log(miContador)
+
+```
+- A. `10`
+- B. `11`
+- C. `Error`
+- D. `NaN`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+En el código proporcionado, hay dos archivos: `contador.js` y `index.js`.
+
+En `contador.js`, se ha declarado una variable llamada `contador` con un valor
+inicial de 10 utilizando la palabra clave `let`. Luego, esta variable se exporta
+como un valor por defecto utilizando `export default contador;`.
+
+En `index.js`, se importa el valor exportado `miContador` desde `contador.js`.
+Sin embargo, en el intento de modificar `miContador` aumentando su valor en 1
+(`miContador += 1;`), se produce un error durante la ejecución. Esto se debe a
+que `miContador` se importa como una variable de solo lectura, y no se puede
+modificar directamente.
+
+Debido a esta operación inválida, se generará un error en tiempo de ejecución y
+se mostrará en la consola. En resumen, este código ilustra la limitación de
+modificar directamente una variable importada y cómo esto puede resultar en un
+error durante la ejecución del programa.
+
+<!-- </div>
+
+<img src="./assets/images/40.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="140"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div> -->
 
 ---
