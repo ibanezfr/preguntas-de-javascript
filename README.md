@@ -2042,9 +2042,7 @@ que `miContador` se importa como una variable de solo lectura, y no se puede
 modificar directamente.
 
 Debido a esta operación inválida, se generará un error en tiempo de ejecución y
-se mostrará en la consola. En resumen, este código ilustra la limitación de
-modificar directamente una variable importada y cómo esto puede resultar en un
-error durante la ejecución del programa.
+se mostrará en la consola. 
 
 <!-- </div>
 
