@@ -75,7 +75,7 @@
 40. [JSON.stringify: Serialización de Objetos en Formato JSON
 ](https://shorturl.at/jop05)
 42. [Importaciones y Modificaciones de Variables en Módulos JavaScript
-]()
+](https://shorturl.at/ADIUY)
 
 ---
 
