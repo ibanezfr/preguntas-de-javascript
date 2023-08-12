@@ -77,7 +77,7 @@
 41. [Importaciones y Modificaciones de Variables en Módulos JavaScript
 ](https://shorturl.at/ADIUY)
 42. [Uso del Operador 'Delete' en JavaScript: Eliminación de Propiedades y
-Variables]()
+Variables](https://shorturl.at/qEOT9)
 
 ---
 
