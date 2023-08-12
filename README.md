@@ -2084,7 +2084,7 @@ que han sido declaradas utilizando "var", "const" o "let".
 Dentro de este contexto, consideremos la variable "nombre" que ha sido declarada
 utilizando "const". Debido a esta declaración, no es posible eliminarla con
 éxito y, por lo tanto, el operador "delete" devuelve "false" en este caso. Por
-otro lado, cuando asignamos el valor 21 a la variable "edad", en realidad
+otro lado, cuando asignamos el valor 27 a la variable "edad", en realidad
 estamos añadiendo una propiedad llamada "edad" al objeto global. Es importante
 destacar que es posible eliminar propiedades de objetos de esta manera, tanto de
 objetos generales como del objeto global. Por lo tanto, al utilizar "delete
