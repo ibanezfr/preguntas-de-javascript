@@ -2051,7 +2051,7 @@ se mostrará en la consola.
 
 ---
 
-# 42. ¿Qué queda guardado en la variable `data`?
+# 42. ¿Qué sucede en este caso?
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 
 ```javascript
