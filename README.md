@@ -2045,6 +2045,10 @@ modificar directamente.
 Debido a esta operación inválida, se generará un error en tiempo de ejecución y
 se mostrará en la consola. 
 
+</div>
+</p></details>
+</div>
+
 ---
 
 # 42. ¿Qué queda guardado en la variable `data`?
