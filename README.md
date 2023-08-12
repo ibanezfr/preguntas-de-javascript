@@ -2046,6 +2046,7 @@ Debido a esta operación inválida, se generará un error en tiempo de ejecució
 se mostrará en la consola. 
 
 ---
+
 # 42. ¿Qué queda guardado en la variable `data`?
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 
