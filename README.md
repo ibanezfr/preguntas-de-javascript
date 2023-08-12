@@ -74,8 +74,10 @@
 39. [El método parseInt()](https://shorturl.at/alqJQ)
 40. [JSON.stringify: Serialización de Objetos en Formato JSON
 ](https://shorturl.at/jop05)
-42. [Importaciones y Modificaciones de Variables en Módulos JavaScript
+41. [Importaciones y Modificaciones de Variables en Módulos JavaScript
 ](https://shorturl.at/ADIUY)
+42. [Uso del Operador 'Delete' en JavaScript: Eliminación de Propiedades y
+Variables]()
 
 ---
 
@@ -1999,7 +2001,6 @@ personalizar la serialización de objetos en formato JSON.
 
 ---
 
----
 # 41. ¿Qué sucede en este caso?
 ###### [ÍNDICE](https://bit.ly/44AIBmF)
 
@@ -2044,14 +2045,54 @@ modificar directamente.
 Debido a esta operación inválida, se generará un error en tiempo de ejecución y
 se mostrará en la consola. 
 
-<!-- </div>
+---
+# 42. ¿Qué queda guardado en la variable `data`?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
 
-<img src="./assets/images/40.webp"
+```javascript
+const nombre = "Franco";
+
+edad = 27;
+
+console.log(delete nombre);
+console.log(delete edad);
+
+```
+- A. `false, true`
+- B. `"Franco", 27`
+- C. `true, true`
+- D. `undefined, undefined`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+El operador "delete" arroja un valor booleano: devuelve "true" si la eliminación
+tiene éxito, mientras que devuelve "false" si no. No obstante, es esencial tener
+en cuenta que no es posible emplear el operador "delete" para eliminar variables
+que han sido declaradas utilizando "var", "const" o "let".
+
+Dentro de este contexto, consideremos la variable "nombre" que ha sido declarada
+utilizando "const". Debido a esta declaración, no es posible eliminarla con
+éxito y, por lo tanto, el operador "delete" devuelve "false" en este caso. Por
+otro lado, cuando asignamos el valor 21 a la variable "edad", en realidad
+estamos añadiendo una propiedad llamada "edad" al objeto global. Es importante
+destacar que es posible eliminar propiedades de objetos de esta manera, tanto de
+objetos generales como del objeto global. Por lo tanto, al utilizar "delete
+edad", obtenemos un valor de "true", indicando una eliminación exitosa.
+
+</div>
+
+<img src="./assets/images/42.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="140"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
-</div> -->
+</div>
 
 ---
