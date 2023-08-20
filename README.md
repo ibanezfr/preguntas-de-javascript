@@ -79,7 +79,7 @@
 42. [Uso del Operador 'Delete' en JavaScript: Eliminación de Propiedades y
 Variables](https://shorturl.at/qEOT9)
 43. [Desestructuración en JavaScript: Extracción de Valores de Arrays y
-    Objetos]()
+    Objetos](https://shorturl.at/uzADU)
 
 ---
 
