@@ -78,6 +78,8 @@
 ](https://shorturl.at/ADIUY)
 42. [Uso del Operador 'Delete' en JavaScript: Eliminación de Propiedades y
 Variables](https://shorturl.at/qEOT9)
+43. [Desestructuración en JavaScript: Extracción de Valores de Arrays y
+    Objetos]()
 
 ---
 
@@ -2093,6 +2095,59 @@ edad", obtenemos un valor de "true", indicando una eliminación exitosa.
 </div>
 
 <img src="./assets/images/42.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="140"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 43. ¿Cuál es el resultado?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+const numeros = [75, 15, 28, 83, 71];
+const [F] = numeros;
+
+console.log(F);
+
+```
+- A. `[[75, 15, 28, 83, 71]]`
+- B. `[75, 15, 28, 83, 71]`
+- C. `75`
+- D. `[75]`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+Imagina que podemos extraer los valores almacenados en arrays o propiedades de
+objetos utilizando la técnica de desestructuración. Veamos un ejemplo:
+
+```js
+[a, b] = [1, 2];
+```
+
+Después de esta asignación, "a" contendrá el valor 1 y "b" contendrá el valor 2.
+Otro truco interesante es el siguiente:
+
+```js
+[F] = [75, 15, 28, 83, 71];
+```
+
+Este código nos indica que "y" tomará el valor del primer elemento en el array,
+en este caso, el número 75. Al inspeccionar el valor de "y" en la consola,
+obtendremos como resultado 75. ¡Así de sencillo es este proceso!
+
+</div>
+
+<img src="./assets/images/43.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="140"
      style="border: 1px solid black; text-align: center;">
