@@ -2156,3 +2156,66 @@ obtendremos como resultado 75. ¡Así de sencillo es este proceso!
 </div>
 
 ---
+
+# 44. ¿Cuál es el resultado?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+let num = 50;
+
+const incrementarNumero = () => num++;
+const incrementarNumeroPasado = numero => numero++;
+
+const num1 = incrementarNumero();
+const num2 = incrementarNumeroPasado(num1);
+
+console.log(num1);
+console.log(num2);
+
+```
+- A. `50`, `50`
+- B. `50`, `51`
+- C. `51`, `51`
+- D. `51`, `52`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+Se inicializa una variable llamada num con el valor 50.
+
+La función incrementarNumero es definida como una función de flecha (() =>).
+Cuando esta función se llama, primero devuelve el valor actual de num (que es
+50), y luego incrementa num en 1.
+
+La función incrementarNumeroPasado toma un parámetro llamado numero. Cuando esta
+función se llama, devuelve el valor de numero (sin cambiarlo) y luego intenta
+incrementar el valor de numero, pero este incremento no afecta a num1 o num2.
+
+Se crea una variable num1 y se le asigna el resultado de llamar a la función
+incrementarNumero. En este punto, num1 obtiene el valor inicial de num (50) y
+luego num se incrementa en 1.
+
+Se crea una variable num2 y se le asigna el resultado de llamar a la función
+incrementarNumeroPasado con num1 como argumento. Como mencioné antes, esta
+función devuelve el valor de num1 (que es 50) y luego intenta incrementar el
+valor, pero nuevamente, este incremento no afecta a num2.
+
+Finalmente, se muestra en la consola el valor de num1 y num2. Como resultado,
+verás que num1 es 50 (ya que es el valor original de num), y num2 también es 50
+(ya que es el valor que obtiene de num1).
+</div>
+
+<img src="./assets/images/43.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="140"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
