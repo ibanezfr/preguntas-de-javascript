@@ -2097,7 +2097,7 @@ edad", obtenemos un valor de "true", indicando una eliminación exitosa.
 
 <img src="./assets/images/42.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="600" height="140"
+     width="600" height="200"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
@@ -2213,7 +2213,7 @@ verás que num1 es 50 (ya que es el valor original de num), y num2 también es 5
 
 <img src="./assets/images/44.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="600" height="140"
+     width="600" height="290"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
