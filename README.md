@@ -81,6 +81,7 @@ Variables](https://shorturl.at/qEOT9)
 43. [Desestructuración en JavaScript: Extracción de Valores de Arrays y
     Objetos](https://shorturl.at/uzADU)
 44. [Operadores Unarios en JavaScript](https://shorturl.at/mqzX6)
+45. [Inicialización de Parámetros y Valores Predeterminados en ES6]()
 
 ---
 
@@ -2209,6 +2210,67 @@ valor, pero nuevamente, este incremento no afecta a num2.
 Finalmente, se muestra en la consola el valor de num1 y num2. Como resultado,
 verás que num1 es 50 (ya que es el valor original de num), y num2 también es 50
 (ya que es el valor que obtiene de num1).
+</div>
+
+<img src="./assets/images/44.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="290"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 45. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+const valor = { numero: 25};
+
+const multiplicar = (x = {...valor}) => {
+     console.log((x.numero *= 2));
+};
+
+multiplicar();
+multiplicar();
+multiplicar(valor);
+multiplicar(valor);
+
+```
+- A. `50`, `100`, `200`, `400`
+- B. `50`, `100`, `50`, `100`
+- C. `50`, `50`, `50`, `100`
+- D. `NaN`, `NaN`, `50`, `100`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+En ES6, se nos permite establecer valores predeterminados para los parámetros.
+Si no se proporciona un valor distinto al llamar a la función, o si el valor del
+parámetro es "undefined", este tomará el valor predeterminado. En este caso,
+estamos extendiendo las características del objeto "valor" hacia un objeto
+nuevo, de manera que "x" adquiere el valor por defecto de { número: 25 }.
+
+Es importante mencionar que ¡el argumento predeterminado se evalúa en el momento
+de la llamada! Cada vez que invocamos la función, se crea un objeto nuevo. Las
+dos primeras veces que llamamos a la función "multiplicar" sin proporcionar un
+valor, "x" toma el valor predeterminado de { número: 25 }. Luego, mostramos el
+resultado de multiplicar este número en la consola, lo que nos da 50.
+
+En la tercera ocasión en que llamamos a "multiplicar", pasamos un argumento: el
+objeto denominado "valor". El operador "*=" es básicamente una forma abreviada
+de escribir "x.numero = x.numero * 2": estamos modificando el valor de
+"x.numero" y mostrando en la consola el resultado de multiplicarlo por 2.
+
+En el cuarto caso, volvemos a pasar el objeto "valor". Dado que "x.numero" había
+sido previamente modificado a 50, la expresión "x.numero *= 2" nos devuelve 100.
+
 </div>
 
 <img src="./assets/images/44.webp"
