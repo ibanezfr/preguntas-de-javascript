@@ -81,7 +81,8 @@ Variables](https://shorturl.at/qEOT9)
 43. [Desestructuración en JavaScript: Extracción de Valores de Arrays y
     Objetos](https://shorturl.at/uzADU)
 44. [Operadores Unarios en JavaScript](https://shorturl.at/mqzX6)
-45. [Inicialización de Parámetros y Valores Predeterminados en ES6]()
+45. [Inicialización de Parámetros y Valores Predeterminados en
+    ES6](https://shorturl.at/FKQX4)
 
 ---
 
