@@ -83,6 +83,7 @@ Variables](https://shorturl.at/qEOT9)
 44. [Operadores Unarios en JavaScript](https://shorturl.at/mqzX6)
 45. [Inicialización de Parámetros y Valores Predeterminados en
     ES6](https://shorturl.at/FKQX4)
+46. [El método reduce en JavaScript]()
 
 ---
 
@@ -2277,6 +2278,67 @@ sido previamente modificado a 50, la expresión "x.numero *= 2" nos devuelve 100
 <img src="./assets/images/44.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="290"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 46. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+[1, 2, 3, 4].reduce((x,y) => console.log(x, y));
+
+```
+- A. `1` `2` y `3` `3` y `6` `4`
+- B. `1` `2` y `2` `3` y `3` `4`
+- C. `1` `undefined` y `2` `undefined` y `3` `undefined` y `4` `undefined`
+- D. `1` `2` y `undefined` `3` y `undefined` `4`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `D`.
+
+<div align="left">
+
+El método reduce en JavaScript. En este caso, el primer argumento que recibe es
+el "acumulador", que en este ejemplo lo llamamos "x". El segundo argumento es el
+valor actual, "y". La idea detrás del método reduce es ejecutar una función de
+callback en cada elemento del array, lo que al final puede dar como resultado un
+único valor.
+
+En el ejemplo que estamos viendo, no estamos devolviendo ningún valor en
+realidad. En lugar de eso, estamos mostrando los valores del acumulador y el
+valor actual en la consola.
+
+La cosa es que el valor del acumulador es como una especie de memoria de lo que
+la función de callback ha devuelto previamente. Si no le pasas ese valor inicial
+opcional al método reduce, el acumulador toma el valor del primer elemento en la
+primera llamada.
+
+Así que, en la primera llamada, el acumulador (x) se establece en 1, y el valor
+actual (y) es 2. En este caso, no devolvemos nada desde la función de callback,
+solo estamos sacando por consola el acumulador y el valor actual, lo que sería 1
+y 2.
+
+Cuando no devuelves explícitamente un valor desde una función, por defecto se
+devuelve "undefined". En la siguiente llamada, el acumulador se convierte en
+"undefined", y el valor actual es 3. Entonces, en la consola se vería
+"undefined" y 3.
+
+En la cuarta llamada, nuevamente no estamos devolviendo nada desde la función de
+callback. El acumulador sigue siendo "undefined", y el valor actual es 4. Por lo
+tanto, en la consola se mostraría "undefined" y 4.
+
+</div>
+
+<img src="./assets/images/46.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="210"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
