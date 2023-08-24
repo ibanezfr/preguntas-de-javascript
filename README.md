@@ -83,7 +83,7 @@ Variables](https://shorturl.at/qEOT9)
 44. [Operadores Unarios en JavaScript](https://shorturl.at/mqzX6)
 45. [Inicialización de Parámetros y Valores Predeterminados en
     ES6](https://shorturl.at/FKQX4)
-46. [El método reduce en JavaScript]()
+46. [El método reduce en JavaScript](https://shorturl.at/defuB)
 
 ---
 
