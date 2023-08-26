@@ -83,6 +83,8 @@ Variables](https://shorturl.at/qEOT9)
 44. [Operadores Unarios en JavaScript](https://shorturl.at/mqzX6)
 45. [Inicialización de Parámetros y Valores Predeterminados en
     ES6](https://shorturl.at/FKQX4)
+46. [Distinguiendo la Unicidad y Equivalencia de Symbols en JavaScript
+](https://shorturl.at/xBGP9)
 
 ---
 
