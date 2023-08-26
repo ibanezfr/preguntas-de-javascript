@@ -2274,9 +2274,9 @@ sido previamente modificado a 50, la expresión "x.numero *= 2" nos devuelve 100
 
 </div>
 
-<img src="./assets/images/44.webp"
+<img src="./assets/images/45.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="600" height="290"
+     width="600" height="380"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
