@@ -2283,3 +2283,45 @@ sido previamente modificado a 50, la expresión "x.numero *= 2" nos devuelve 100
 </div>
 
 ---
+# 46. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+
+console.log(Number(2) === Number(2))
+console.log(Boolean(false) === Boolean(false))
+console.log(Symbol('foo') === Symbol('foo'))
+
+```
+- A. `true`, `true`, `false`
+- B. `false`, `true`, `false`
+- C. `true`, `false`, `true`
+- D. `true`, `true`, `true`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+Cada Symbol es totalmente especial y único. Cuando le pasas una descripción como
+argumento a la función Symbol, es solo para identificarlo. El valor real del
+Symbol no está ligado a ese argumento. Debido a esta característica, cuando los
+comparamos, como en el caso de crear dos Symbols usando Symbol('foo'), obtenemos
+dos Symbols completamente distintos. Así que, aunque parezcan similares,
+Symbol('foo') y Symbol('foo') son únicos y no son iguales; de hecho,
+Symbol('foo') === Symbol('foo') arroja false.
+
+</div>
+
+<img src="./assets/images/46.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="220"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
