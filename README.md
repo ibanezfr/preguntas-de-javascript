@@ -85,6 +85,7 @@ Variables](https://shorturl.at/qEOT9)
     ES6](https://shorturl.at/FKQX4)
 46. [Distinguiendo la Unicidad y Equivalencia de Symbols en JavaScript
 ](https://shorturl.at/xBGP9)
+47. []()
 
 ---
 
@@ -2322,6 +2323,64 @@ Symbol('foo') === Symbol('foo') arroja false.
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="220"
      style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 47. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+const nombre = "Franco Ibañez";
+console.log(nombre.padStart(15,"*"));
+console.log(nombre.padStart(3,"*"));
+
+```
+
+- A. `"Franco Ibañez"`, `"Franco Ibañez"`
+- B. `"***************Franco Ibañez"`, `"***Franco Ibañez"`
+- C. `"**Franco Ibañez"`, `"Franco Ibañez"`
+- D. `"**Franco Ibañez"`, `"***"`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+[Artículo mdn web docs sobre  el método padStart().](https://shorturl.at/aLWY7)
+
+El método padStart en JavaScript es una herramienta útil para manipular cadenas
+de texto. Permite agregar caracteres específicos al principio de una cadena
+hasta alcanzar una longitud deseada. Veamos cómo funciona con un ejemplo:
+
+```javascript
+
+const nombre = "Franco Ibañez";
+
+// Rellenar al principio con asteriscos hasta tener 15 caracteres
+console.log(nombre.padStart(15, "*")); // Resultado: "**Franco Ibañez"
+
+// Rellenar al principio con asteriscos hasta tener 3 caracteres
+console.log(nombre.padStart(3, "*")); // Resultado: "Franco Ibañez"
+
+```
+
+En el primer caso, hemos especificado que la cadena debe tener una longitud de
+15 caracteres y, si es necesario, se rellenará con asteriscos al principio. En
+el segundo caso, hemos especificado una longitud mínima de 3 caracteres, pero
+como la cadena original ya es más larga, no se realiza ningún cambio.
+
+El método padStart puede ser útil en diversas situaciones, como formatear
+cadenas para su presentación o alinear texto en tablas. ¡Es una herramienta
+versátil que puedes incorporar a tus proyectos de programación!
+
+</div>
+
 </p></details>
 
 </div>
