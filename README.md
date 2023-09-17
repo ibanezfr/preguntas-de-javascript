@@ -85,7 +85,8 @@ Variables](https://shorturl.at/qEOT9)
     ES6](https://shorturl.at/FKQX4)
 46. [Distinguiendo la Unicidad y Equivalencia de Symbols en JavaScript
 ](https://shorturl.at/xBGP9)
-47. []()
+47. [Método padStart en JavaScript para Manipular Cadenas de Texto
+](https://shorturl.at/dsAQY)
 
 ---
 
