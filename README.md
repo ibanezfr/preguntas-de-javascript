@@ -87,6 +87,8 @@ Variables](https://shorturl.at/qEOT9)
 ](https://shorturl.at/xBGP9)
 47. [Método padStart en JavaScript para Manipular Cadenas de Texto
 ](https://shorturl.at/dsAQY)
+48. [Entendiendo el Comportamiento de la Función push() en JavaScript
+]()
 
 ---
 
@@ -2379,6 +2381,60 @@ como la cadena original ya es más larga, no se realiza ningún cambio.
 El método padStart puede ser útil en diversas situaciones, como formatear
 cadenas para su presentación o alinear texto en tablas. ¡Es una herramienta
 versátil que puedes incorporar a tus proyectos de programación!
+
+</div>
+
+</p></details>
+
+</div>
+
+---
+
+# 48. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+function agregarALaLista(elemento, lista){
+     return lista.push(elemento);
+}
+
+const resultado = agregarALaLista("naranja", ["mandarina"]);
+console.log(resultado);
+
+```
+
+- A. `["naranja", "mandarina"]`
+- B. `2`
+- C. `true`
+- D. `undefined`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `B`.
+
+<div align="left">
+
+Tenemos una función llamada `agregarALaLista` que toma dos parámetros:
+`elemento` y `lista`. La función intenta agregar el `elemento` a la `lista`
+utilizando el método `push()` que tienen los arrays en JavaScript.
+
+
+La función `agregarALaLista` se llama con los argumentos `"naranja"` y
+["mandarina"]. Esto significa que estamos tratando de agregar `"naranja"` a la
+lista que inicialmente contiene solo `"mandarina"`.
+
+Cuando utilizamos `push()` para agregar un `elemento` a un array en JavaScript,
+este método no devuelve el array modificado. En cambio, devuelve la longitud
+actual del array después de agregar el `elemento`.
+
+Dado que hemos agregado `"naranja"` a la lista que tenía un `elemento`, la
+longitud del array resultante será 2. Por lo tanto, la función `agregarALaLista`
+devuelve 2.
+
+Por lo tanto, la opción correcta es `B: 2`, ya que es el valor que se asigna a
+la variable resultado y se imprime en la consola.
 
 </div>
 
