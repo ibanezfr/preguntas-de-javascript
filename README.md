@@ -88,7 +88,7 @@ Variables](https://shorturl.at/qEOT9)
 47. [Método padStart en JavaScript para Manipular Cadenas de Texto
 ](https://shorturl.at/dsAQY)
 48. [Entendiendo el Comportamiento de la Función push() en JavaScript
-]()
+](https://shorturl.at/ewFMO)
 
 ---
 
