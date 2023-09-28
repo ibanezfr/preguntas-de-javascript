@@ -2422,7 +2422,7 @@ utilizando el método `push()` que tienen los arrays en JavaScript.
 
 
 La función `agregarALaLista` se llama con los argumentos `"naranja"` y
-["mandarina"]. Esto significa que estamos tratando de agregar `"naranja"` a la
+`["mandarina"]`. Esto significa que estamos tratando de agregar `"naranja"` a la
 lista que inicialmente contiene solo `"mandarina"`.
 
 Cuando utilizamos `push()` para agregar un `elemento` a un array en JavaScript,
@@ -2438,6 +2438,10 @@ la variable resultado y se imprime en la consola.
 
 </div>
 
+<img src="./assets/images/48.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="210"
+     style="border: 1px solid black; text-align: center;">
 </p></details>
 
 </div>
