@@ -89,6 +89,8 @@ Variables](https://shorturl.at/qEOT9)
 ](https://shorturl.at/dsAQY)
 48. [Entendiendo el Comportamiento de la Función push() en JavaScript
 ](https://shorturl.at/ewFMO)
+49. [El uso de String.raw para Ignorar Escapes en
+    JavaScript](https://shorturl.at/acoQS)
 
 ---
 
