@@ -2447,3 +2447,60 @@ la variable resultado y se imprime en la consola.
 </div>
 
 ---
+
+# 49. ¿Qué se imprime en la consola?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+console.log(String.raw`Hello\nworld`);
+
+```
+
+- A. `Hello world!`
+- B. `Hello`
+     `world`
+- C. `Hello\nworld`
+- D. `Hello\n`
+     `world`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `C`.
+
+<div align="left">
+
+La función String.raw devuelve una cadena en la que se ignoran los escapes (\n,
+ \v, \t, etc.). Las barras invertidas pueden ser un problema, ya que podrías
+ terminar con algo como:
+
+```javascript
+const path = `C:\Documents\Projects\table.html`
+```
+
+Lo que resultaría en:
+
+```javascript
+"C:DocumentsProjects able.html"
+```
+
+Con String.raw, simplemente ignoraría el escape y mostraría:
+
+```javascript
+C:\Documents\Projects\table.html
+```
+
+En este caso, la cadena es "Hello\nworld", que se registra tal cual.
+
+</div>
+
+<img src="./assets/images/49.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
