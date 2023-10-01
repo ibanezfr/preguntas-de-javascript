@@ -2457,11 +2457,14 @@ console.log(String.raw`Hello\nworld`);
 ```
 
 - A. `Hello world!`
-- B. `Hello`
-     `world`
+
+- B. `Hello`<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`world`
+
 - C. `Hello\nworld`
-- D. `Hello\n`
-     `world`
+
+- D. `Hello\n`<br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`world`
 
 <div align="center">
 
