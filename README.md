@@ -91,6 +91,8 @@ Variables](https://shorturl.at/qEOT9)
 ](https://shorturl.at/ewFMO)
 49. [El uso de String.raw para Ignorar Escapes en
     JavaScript](https://shorturl.at/acoQS)
+50. [Congelando Objetos en JavaScript: Entendiendo el Uso de Object.freeze()
+]()
 
 ---
 
@@ -2501,6 +2503,58 @@ En este caso, la cadena es "Hello\nworld", que se registra tal cual.
 </div>
 
 <img src="./assets/images/49.webp"
+     alt="Captura del output en la terminal del ejercicio"
+     width="600" height="150"
+     style="border: 1px solid black; text-align: center;">
+</p></details>
+
+</div>
+
+---
+
+# 50. ¿Qué sucede con este objeto?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+const miObjeto = {x: 50, y: 100};
+
+Object.freeze(miObjeto);
+
+const otroObjeto = miObjeto;
+
+otroObjeto.x = 250;
+
+console.log(otroObjeto);
+
+```
+
+- A. `{x: 250 , y: 100}`
+- B. `{x: 50 , y: 100}`
+- C. `{x: 250}`
+- D. `ReferenceError`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `B`.
+
+<div align="left">
+
+La opción correcta es la B, {x: 50, y: 100}. Esto se debe a que en el código se
+está utilizando Object.freeze(miObjeto) para congelar el objeto miObjeto. Cuando
+un objeto está congelado en JavaScript, no se pueden realizar cambios en sus
+propiedades existentes.
+
+Luego, se crea un nuevo objeto llamado otroObjeto y se le asigna la referencia
+del objeto miObjeto. Esto significa que ambos objetos apuntan al mismo lugar en
+la memoria. Por lo tanto, cuando intentas cambiar la propiedad x de otroObjeto a
+250, no se permite debido a que miObjeto está congelado. El valor de x seguirá
+siendo 50 y el valor de y se mantendrá en 100.
+
+</div>
+
+<img src="./assets/images/50.webp"
      alt="Captura del output en la terminal del ejercicio"
      width="600" height="150"
      style="border: 1px solid black; text-align: center;">
