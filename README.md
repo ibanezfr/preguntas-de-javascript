@@ -2556,7 +2556,7 @@ siendo 50 y el valor de y se mantendrá en 100.
 
 <img src="./assets/images/50.webp"
      alt="Captura del output en la terminal del ejercicio"
-     width="600" height="150"
+     width="600" height="290"
      style="border: 1px solid black; text-align: center;">
 </p></details>
 
