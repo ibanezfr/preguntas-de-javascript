@@ -92,7 +92,7 @@ Variables](https://shorturl.at/qEOT9)
 49. [El uso de String.raw para Ignorar Escapes en
     JavaScript](https://shorturl.at/acoQS)
 50. [Congelando Objetos en JavaScript: Entendiendo el Uso de Object.freeze()
-]()
+](https://shorturl.at/hxAU5)
 
 ---
 
