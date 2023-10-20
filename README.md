@@ -93,7 +93,7 @@ Variables](https://shorturl.at/qEOT9)
     JavaScript](https://shorturl.at/acoQS)
 50. [Congelando Objetos en JavaScript: Entendiendo el Uso de Object.freeze()
 ](https://shorturl.at/hxAU5)
-51. [](¿Se trata de una función pura?)
+51. [https://shorturl.at/dhtx3](¿Se trata de una función pura?)
 
 ---
 
