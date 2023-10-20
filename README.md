@@ -93,6 +93,7 @@ Variables](https://shorturl.at/qEOT9)
     JavaScript](https://shorturl.at/acoQS)
 50. [Congelando Objetos en JavaScript: Entendiendo el Uso de Object.freeze()
 ](https://shorturl.at/hxAU5)
+51. [](¿Se trata de una función pura?)
 
 ---
 
@@ -2559,6 +2560,40 @@ siendo 50 y el valor de y se mantendrá en 100.
      width="600" height="290"
      style="border: 1px solid black; text-align: center;">
 </p></details>
+
+</div>
+
+---
+
+# 51. ¿Se trata de una función pura?
+###### [ÍNDICE](https://bit.ly/44AIBmF)
+
+```javascript
+function suma(a, b){
+     return a + b;
+}
+
+```
+
+- A. `SI`
+- B. `NO`
+
+<div align="center">
+
+<details><summary><b>RESPUESTA</b></summary> <p>
+
+## La correcta es la `A`.
+
+<div align="left">
+
+Una función pura se caracteriza por ofrecer un resultado constante cuando se le
+proporcionan los mismos argumentos. Tomemos como ejemplo la función de suma: sin
+importar cuántas veces le pasemos los números 1 y 2, siempre obtendremos 3 como
+resultado. Lo mismo ocurre al sumar 5 y 10; el resultado será 15, sin efectos
+secundarios. Esta estabilidad en los resultados es lo que define a una función
+como pura.
+
+</div>
 
 </div>
 
